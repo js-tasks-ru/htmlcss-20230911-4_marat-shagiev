@@ -1,0 +1,10 @@
+.header {
+ border-bottom: 1px var(--grey-2) solid;
+ padding: 20px;
+ color: var(--black);
+ line-height: normal;
+}
+
+.header__title {
+ font-size: 3rem;
+}
