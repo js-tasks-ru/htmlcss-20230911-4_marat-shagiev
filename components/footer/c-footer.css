@@ -1,0 +1,21 @@
+.c-footer {
+ min-height       : 380px;
+ background-color : var(--white);
+ border-top       : 1px var(--grey-2) solid;
+ text-align       : center;
+ padding-top      : 100px;
+ display          : flex;
+ flex-direction   : column;
+ justify-content  : flex-start;
+ align-items      : center;
+}
+
+.c-footer__title {
+ font-size   : 2rem;
+ font-weight : normal;
+}
+
+.c-footer__description {
+ max-width : 640px;
+ font-size : 1rem;
+}
