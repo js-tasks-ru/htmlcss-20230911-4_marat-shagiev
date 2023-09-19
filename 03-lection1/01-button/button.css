@@ -1,52 +1,58 @@
 /* Стилизация кнопки */
 
-.btn-primary, .btn-secondary, .btn-alternate {
+/**
+ * Block'btn'
+ */
+.btn {
  width: 182px;
  height: 48px;
  flex-shrink: 0;
  border-radius: 8px;
- border: none;
- color: var(--white);
  text-align: center;
  font-family: Roboto;
  font-size: 16px;
  font-style: normal;
  font-weight: 500;
  line-height: normal;
+ border: none;
+ color: var(--white);
 }
 
-.btn-primary {
- background: var(--primary);
-}
-
-.btn-secondary {
- background: var(--secondary);
-}
-
-.btn-alternate {
- color: var(--grey-4);
- background: none;
- border: 1px solid var(--grey-3);
-}
-
-.btn-primary:hover, .btn-secondary:hover, .btn-alternate:hover {
+.btn:hover, .btn:hover, .btn:hover {
  cursor: pointer;
 }
 
-.btn-primary:hover {
+.btn:disabled, .btn:disabled, .btn:disabled {
+ opacity: 0.5;
+ pointer-events: none;
+}
+
+/**
+ * Modifiers of block 'btn'
+ */
+.btn_view_primary {
+ background: var(--primary);
+}
+
+.btn_view_secondary {
+ background: var(--secondary);
+}
+
+.btn_view_alternate {
+ background: var(--alternate);
+ color: var(--alternate-color);
+ border: var(--alternate-border);
+}
+
+.btn_view_primary:hover {
  background: var(--primary-hover);
 }
 
-.btn-secondary:hover {
+.btn_view_secondary:hover {
  background: var(--secondary-hover);
 }
 
-.btn-alternate:hover {
- border-color: var(--black);
+.btn_view_alternate:hover {
+ border-color: var(--alternate-border-hover);
 }
 
-.btn-primary:disabled, .btn-secondary:disabled, .btn-alternate:disabled {
- opacity: 0.5;
- cursor: not-allowed;
- pointer-events: none;
-}
