@@ -4,9 +4,8 @@
  * Block'btn'
  */
 .btn {
- width: 182px;
  height: 48px;
- flex-shrink: 0;
+ padding: 15px 24px;
  border-radius: 8px;
  text-align: center;
  font-family: Roboto;
@@ -16,13 +15,11 @@
  line-height: normal;
  border: none;
  color: var(--white);
-}
-
-.btn:hover, .btn:hover, .btn:hover {
  cursor: pointer;
+ transition: opacity 200ms ease-in-out;
 }
 
-.btn:disabled, .btn:disabled, .btn:disabled {
+.btn:disabled {
  opacity: 0.5;
  pointer-events: none;
 }
@@ -38,10 +35,15 @@
  background: var(--secondary);
 }
 
+.btn_view_primary, .btn_view_secondary {
+ transition: background 200ms ease-in-out;
+}
+
 .btn_view_alternate {
  background: var(--alternate);
  color: var(--alternate-color);
  border: var(--alternate-border);
+ transition: border 200ms ease-in-out;
 }
 
 .btn_view_primary:hover {
