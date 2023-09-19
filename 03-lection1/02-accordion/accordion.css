@@ -1,1 +1,19 @@
 /* Стилизация аккордеона */
+
+.accord {
+
+}
+
+.accord__item {
+}
+
+.accord__title {
+ list-style: none;
+}
+
+.accord__title::-webkit-details-marker { /* нестандартный псевдоэлемент Google Chrome */
+ display: none;
+}
+
+.accord__text {
+}
