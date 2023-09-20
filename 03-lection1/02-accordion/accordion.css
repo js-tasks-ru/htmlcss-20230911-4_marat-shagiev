@@ -1,19 +1,39 @@
 /* Стилизация аккордеона */
-
-.accord {
-
+/*
+font: [font-style||font-variant||font-weight] font-size [/line-height] font-family | inherit
+*/
+.accordeon {
+ max-width: 1200px; /*demo-option*/
+ padding: 20px; /*demo-option*/
+ color: var(--black);
+ font: 400 16px/1.5 Inter, sans-serif;
 }
 
-.accord__item {
+.accordeon__item {
+ background-color: var(--white);
+ padding: 24px 32px;
+ border-radius: 8px;
+ border: 1px solid var(--grey-3);
+ margin-bottom: 8px;
+ font: inherit;
 }
 
-.accord__title {
+.accordeon__item:last-child {
+ margin-bottom: 0;
+}
+
+.accordeon__title {
  list-style: none;
+ font: inherit;
+ display: block;
 }
 
-.accord__title::-webkit-details-marker { /* нестандартный псевдоэлемент Google Chrome */
+.accordeon__title::-webkit-details-marker { /* нестандартный псевдоэлемент Google Chrome */
  display: none;
 }
 
-.accord__text {
+.accordeon__text {
+ color: var(--grey-4);
+ font: inherit;
+ margin: 0;
 }
