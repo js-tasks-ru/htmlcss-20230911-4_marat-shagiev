@@ -2,39 +2,42 @@
 /*
 font: [font-style||font-variant||font-weight] font-size [/line-height] font-family | inherit
 */
-.accordeon {
- max-width: 1200px; /*demo-option*/
- padding: 20px; /*demo-option*/
+.accordion {
  color: var(--black);
- font: 400 16px/1.5 Inter, sans-serif;
 }
 
-.accordeon__item {
+.accordion__item {
  background-color: var(--white);
  padding: 24px 32px;
  border-radius: 8px;
  border: 1px solid var(--grey-3);
  margin-bottom: 8px;
- font: inherit;
 }
 
-.accordeon__item:last-child {
+.accordion__item:last-child {
  margin-bottom: 0;
 }
 
-.accordeon__title {
+.accordion__title {
  list-style: none;
- font: inherit;
  display: block;
 }
 
-.accordeon__title::-webkit-details-marker { /* нестандартный псевдоэлемент Google Chrome */
+.accordion__title::-webkit-details-marker { /* нестандартный псевдоэлемент Google Chrome */
  display: none;
 }
 
-.accordeon__text {
+.accordion__text {
  color: var(--grey-4);
  font: inherit;
  padding: 16px 0 8px 0;
  margin: 0;
 }
+
+/**
+*modifiers
+ */
+.accordion_font_inter, .accordion__item_font_inter, .accordion__text_font_inter, .accordion__title_font_inter {
+ font: 400 16px/1.5 Inter, sans-serif;
+}
+
