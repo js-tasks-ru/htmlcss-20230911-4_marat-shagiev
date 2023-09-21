@@ -11,6 +11,7 @@
  --purple: #7048e8;
  --dark-purple: #5028c6;
  --blue: #374fc7;
+ --blue-2: #4263eb;
  --dark-blue: #2342c0;
  --red: #f03d3e;
  --grey-1: #f8f9fa;
@@ -32,6 +33,11 @@
  --alternate-color: var(--gray-4);
  --alternate-border: 1px solid var(--grey-3);
  --alternate-border-hover: var(--black);
+
+ /**
+ * histogram styles
+ */
+ --histogram-column: var(--blue-2);
 }
 
 * {
