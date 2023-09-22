@@ -4,6 +4,7 @@ font: [font-style||font-variant||font-weight] font-size [/line-height] font-fami
 */
 .accordion {
  color: var(--black);
+ font: 400 16px/1.5 Inter, sans-serif;
 }
 
 .accordion__item {
@@ -33,11 +34,3 @@ font: [font-style||font-variant||font-weight] font-size [/line-height] font-fami
  padding: 16px 0 8px 0;
  margin: 0;
 }
-
-/**
-*modifiers
- */
-.accordion_font_inter, .accordion__item_font_inter, .accordion__text_font_inter, .accordion__title_font_inter {
- font: 400 16px/1.5 Inter, sans-serif;
-}
-
