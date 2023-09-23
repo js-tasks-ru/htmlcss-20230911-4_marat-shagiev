@@ -1,0 +1,9 @@
+.page {
+ height: 100vh;
+ display: flex;
+ flex-flow: column nowrap;
+}
+
+.page__main {
+ flex-grow: 1;
+}
