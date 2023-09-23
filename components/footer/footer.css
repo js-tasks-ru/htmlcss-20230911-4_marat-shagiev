@@ -1,5 +1,5 @@
 .footer {
- background-color: var(--dark-purple);
+ background-color: var(--white);
  border-top: 1px var(--grey-2) solid;
  text-align: center;
  padding-top: 100px;
@@ -8,13 +8,16 @@
 }
 
 .footer__title {
- font-size: 2rem;
- font-weight: normal;
+ font-size: 38px;
+ font-weight: 500;
+ line-height: 1.26;
 }
 
 .footer__description {
  max-width: 640px;
- font-size: 1rem;
+ font-size: 16px;
+ line-height: 1.5;
+ font-width: 400;
 }
 
 .footer__inner {

@@ -1,5 +1,5 @@
 .page {
- height: 100vh;
+ height: 100vh; /* !? IF SET TO 100%, THE FOOTER SOMETIMES BECOMES DETACHED. !? */
  display: flex;
  flex-flow: column nowrap;
 }
