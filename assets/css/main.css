@@ -40,6 +40,6 @@
  --histogram-column: var(--blue-2);
 }
 
-* {
+body {
  font-family: 'Roboto', sans-serif;
 }
