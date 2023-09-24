@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <!-- Страница со скелетоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./skeleton.css">
-    </head>
-    <body>
+	<head>
+		<meta charset="utf-8">
+		<title>lection-02-skeleton</title>
+		<link rel="stylesheet" href="../../assets/css/main.css">
+		<link rel="stylesheet" href="./skeleton.css">
+	</head>
+	<body>
 
-    </body>
+		<div class="skelet">
+
+			<div class="skelet__item">
+				<div class="skelet__container skelet__container_direction_row">
+					<div class="skelet__shape-ellipse"></div>
+					<div class="skelet__container skelet__container_direction_col skelet__container_greedy">
+						<div class="skelet__shape-rectangle skelet__shape-rectangle_w_50ps"></div>
+						<div class="skelet__shape-rectangle skelet__shape-rectangle_w_75ps"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="skelet__item">
+				<div class="skelet__container skelet__container_direction_col">
+					<div class="skelet__shape-rectangle skelet__shape-rectangle_w_100ps"></div>
+					<div class="skelet__shape-rectangle skelet__shape-rectangle_w_100ps"></div>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
 </html>
