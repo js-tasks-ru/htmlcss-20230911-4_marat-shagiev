@@ -1,5 +1,5 @@
 .page {
- height: 100vh; /* !? IF SET TO 100%, THE FOOTER SOMETIMES BECOMES DETACHED. !? */
+ height: 100vh; /* ? If set to 100%, the footer sometimes becomes detached. */
  display: flex;
  flex-flow: column nowrap;
 }
