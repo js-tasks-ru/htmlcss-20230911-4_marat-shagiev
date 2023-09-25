@@ -1,0 +1,27 @@
+.card {
+ background: var(--white);
+ border-radius: 12px;
+ box-shadow: var(--card-shadow);
+ width: 350px;
+ height: 370px;
+ padding-bottom: 30px;
+}
+
+.card__header {
+}
+
+.card__title {
+ font-size: 21px;
+ font-style: normal;
+ font-weight: 500;
+ line-height: normal;
+ margin: 0;
+}
+
+.card__inner {
+ height: 100%;
+ display: flex;
+ flex-flow: column nowrap;
+ align-items: center;
+ justify-content: flex-end;
+}
