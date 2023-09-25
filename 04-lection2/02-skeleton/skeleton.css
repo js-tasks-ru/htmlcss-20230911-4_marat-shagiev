@@ -1,56 +1,35 @@
 .skelet {
- border: 1px solid var(--black);
- padding: 24px;
- border-radius: 12px;
+ border: 1px solid var(--grey-3);
+ border-radius: 8px;
+ padding: 24px 40px 32px 24px;
+ background: var(--white);
 }
 
 .skelet__item {
- margin-bottom: 8px;
- margin-top: 8px;
-}
-
-.skelet__item:first-child{
- margin-top: 0;
-}
-
-.skelet__container {
  display: flex;
+ align-items: center;
+ gap: 16px;
+}
+
+.skelet__item + .skelet__item {
+ margin-top: 24px
+}
+
+.skelet__column {
+ display: flex;
+ flex-flow: column nowrap;
+ flex-grow: 1;
  gap: 8px;
 }
 
-.skelet__container_direction_col {
- flex-flow: column nowrap;
-}
-
-.skelet__container_direction_row {
- align-items: center;
-}
-
-.skelet__container_greedy {
- flex-grow: 1;
-}
-
-.skelet__shape-ellipse {
+.skelet__ellipse {
  height: 64px;
  width: 64px;
  background: var(--skelet-bg);
  border-radius: 100%;
 }
 
-.skelet__shape-rectangle {
+.skelet__rectangle {
  height: 20px;
- min-width: 85px;
- background: var(--skelet-bg)
-}
-
-.skelet__shape-rectangle_w_50ps {
- width: 50%;
-}
-
-.skelet__shape-rectangle_w_75ps {
- width: 75%;
-}
-
-.skelet__shape-rectangle_w_100ps {
- width: 100%;
+ background: var(--skelet-bg);
 }
