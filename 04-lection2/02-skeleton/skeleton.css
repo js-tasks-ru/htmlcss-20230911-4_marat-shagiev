@@ -33,3 +33,15 @@
  height: 20px;
  background: var(--skelet-bg);
 }
+
+.skelet__rectangle_w_30ps {
+ width: 30%;
+}
+
+.skelet__rectangle_w_50ps {
+ width: 50%;
+}
+
+.skelet__rectangle_w_90ps {
+ width: 90%;
+}
