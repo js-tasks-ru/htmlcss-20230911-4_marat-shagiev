@@ -37,6 +37,9 @@
  --alternate-border-hover: var(--black);
 
  --card-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
+
+ /* Modal dialog colors */
+ --grey-modal-back: #c4c4c4;
 }
 
 body {
