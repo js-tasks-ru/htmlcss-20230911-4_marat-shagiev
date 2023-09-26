@@ -1,0 +1,9 @@
+.page {
+ height: 100vh; /* ? If set to 100%, the footer sometimes becomes detached. */
+ display: flex;
+ flex-flow: column nowrap;
+}
+
+.page__main {
+ flex-grow: 1;
+}
