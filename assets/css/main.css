@@ -14,6 +14,7 @@
  --purple: #7048e8;
  --dark-purple: #5028c6;
  --blue: #374fc7;
+ --blue-2: #4263EB;
  --dark-blue: #2342c0;
  --red: #f03d3e;
  --grey-1: #f8f9fa;
@@ -24,19 +25,41 @@
  --error: var(--red);
  --success: var(--blue);
 
+ /*BUTTONS*/
  --primary: var(--blue);
  --primary-hover: var(--dark-blue);
  --secondary: var(--purple);
  --secondary-hover: var(--dark-purple);
- /**
- * alternate styles
- */
  --alternate: none;
  --alternate-color: var(--gray-4);
  --alternate-border: 1px solid var(--grey-3);
  --alternate-border-hover: var(--black);
 
  --card-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
+
+ /*CALENDAR*/
+ --calendar-primary: #334D6E;
+ --calendar-days: #90A0B7;
+ --calendar-range: #A0B1F5;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 body {

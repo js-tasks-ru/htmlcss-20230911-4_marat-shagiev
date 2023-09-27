@@ -18,17 +18,32 @@
 }
 
 .calendar__item {
-
+ color: var(--calendar-primary);
+ text-align: center;
+ font-family: "Source Sans Pro", sans-serif;
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 1.25;
 }
 
 .calendar__item_day {
-
+ color: var(--calendar-days);
+ text-align: center;
+ font-family: Inter, sans-serif;
+ font-size: 14px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 1.4;
 }
 
 .calendar__item_range_edge {
-
+ background: var(--blue-2);
+ color: var(--white);
+ font-style: normal;
+ font-weight: 600;
 }
 
 .calendar__item_range_inner {
-
+background: var(--calendar-range);
 }
