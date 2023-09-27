@@ -2,19 +2,33 @@
  border: 1px solid var(--grey-3);
  border-radius: 8px;
  background: var(--white);
+ padding: 28px 26px 40px 26px;
 }
 
 .calendar__wrapper {
-
+ padding-bottom: 100%;
+ position: relative;
 }
 
 .calendar__inner {
  display: grid;
  grid-template: repeat(6, 1fr) / repeat(7, 1fr);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
 }
 
 .calendar__title {
-
+ font-family: Inter, sans-serif;
+ font-size: 20px;
+ font-style: normal;
+ font-weight: 600;
+ line-height: 1.2;
+ color: var(--calendar-primary);
+ margin-bottom: 24px;
+ text-align: center;
 }
 
 .calendar__item {
@@ -25,6 +39,9 @@
  font-style: normal;
  font-weight: 400;
  line-height: 1.25;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
 .calendar__item_day {
@@ -41,9 +58,9 @@
  background: var(--blue-2);
  color: var(--white);
  font-style: normal;
- font-weight: 600;
+ font-weight: 400;
 }
 
 .calendar__item_range_inner {
-background: var(--calendar-range);
+ background: var(--calendar-range);
 }
