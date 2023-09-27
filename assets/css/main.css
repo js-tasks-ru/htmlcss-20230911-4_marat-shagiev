@@ -14,6 +14,7 @@
  --purple: #7048e8;
  --dark-purple: #5028c6;
  --blue: #374fc7;
+ --blue-2: #4263eb;
  --dark-blue: #2342c0;
  --red: #f03d3e;
  --grey-1: #f8f9fa;
@@ -36,10 +37,31 @@
  --alternate-border: 1px solid var(--grey-3);
  --alternate-border-hover: var(--black);
 
+ /**
+ * histogram styles
+ */
+ --histogram-primary: var(--blue-2);
+
+ /**skeleton-bg*/
+ --skelet-bg: linear-gradient(93deg, #dde2e5 6.44%, #e2e6e8 38.47%, #f3f5f5 56.48%, #e3e7ea 77.5%, #dde2e5 102.52%);
+
  --card-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
+
 
  /* Modal dialog colors */
  --grey-modal-back: #c4c4c4;
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 body {
