@@ -1,11 +1,15 @@
 .modal {
  display: none;
+ position: fixed;
+ background-color: var(--grey-modal-back);
+ height: 100vh;
+ width: 100vw;
  font-family: Inter, sans-serif;
 }
 
 .modal__window {
  width: 428px;
- position: fixed;
+ position: absolute;
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%);
@@ -31,18 +35,9 @@
  color: var(grey-4);
 }
 
-.modal__close-trigger {
+.modal__close {
  cursor: pointer;
  position: absolute;
  top: 12px;
  right: 12px;
-}
-
-.modal__page-blocker {
- position: fixed;
- top: 0;
- left: 0;
- height: 100vh;
- width: 100vw;
- background: var(--grey-modal-back);
 }
