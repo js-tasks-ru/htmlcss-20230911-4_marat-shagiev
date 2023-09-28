@@ -48,7 +48,7 @@
  /*CALENDAR*/
  --calendar-primary: #334D6E;
  --calendar-days: #90A0B7;
- --calendar-range: #A0B1F5;
+ --calendar-range: rgba(160, 177, 245, 0.2) /*#A0B1F5 with opacity 0.2*/;
 
 
 
