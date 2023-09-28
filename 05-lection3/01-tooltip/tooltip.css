@@ -12,7 +12,7 @@
 .tooltip__bubble-top {
  position: absolute;
  display: none;
- bottom: calc(50% + 12px + 10px);
+ bottom: calc(50% + 12px + 12px);
  left: 50%;
  transform: translateX(-50%);
  font-size: 16px;
@@ -24,7 +24,7 @@
  color: var(--grey-2);
  border-radius: 10px;
  box-shadow: var(--card-shadow);
- text-wrap: nowrap;
+ width: 129px;
 }
 
 .tooltip__bubble-top:after {
