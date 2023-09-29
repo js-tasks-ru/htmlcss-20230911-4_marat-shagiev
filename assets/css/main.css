@@ -25,13 +25,11 @@
  --error: var(--red);
  --success: var(--blue);
 
+ /*BUTTONS*/
  --primary: var(--blue);
  --primary-hover: var(--dark-blue);
  --secondary: var(--purple);
  --secondary-hover: var(--dark-purple);
- /**
- * alternate styles
- */
  --alternate: none;
  --alternate-color: var(--gray-4);
  --alternate-border: 1px solid var(--grey-3);
@@ -46,6 +44,20 @@
  --skelet-bg: linear-gradient(93deg, #dde2e5 6.44%, #e2e6e8 38.47%, #f3f5f5 56.48%, #e3e7ea 77.5%, #dde2e5 102.52%);
 
  --card-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
+
+ /*CALENDAR*/
+ --calendar-primary: #334D6E;
+ --calendar-days: #90A0B7;
+ --calendar-range: rgba(160, 177, 245, 0.2) /*#A0B1F5 with opacity 0.2*/;
+
+
+
+
+
+
+
+
+
 
 
  /* Modal dialog colors */
