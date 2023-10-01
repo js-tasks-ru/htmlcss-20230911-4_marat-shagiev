@@ -1,9 +1,17 @@
 .header {
  border-bottom: 1px var(--grey-2) solid;
  color: var(--black);
+ padding: 24px;
 }
 
 .header__title {
  font-size: 50px;
  line-height: 1.28;
+}
+.header__bg-color_white {
+ background-color: var(--white);
+}
+
+.header__border_none {
+ border: none;
 }

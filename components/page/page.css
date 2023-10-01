@@ -7,3 +7,7 @@
 .page__main {
  flex-grow: 1;
 }
+
+.page__bg-color_grey-5 {
+ background-color: var(--grey-5);
+}

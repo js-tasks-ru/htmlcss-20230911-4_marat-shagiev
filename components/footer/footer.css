@@ -25,3 +25,13 @@
  flex-flow: column nowrap;
  align-items: center;
 }
+
+.footer__title-demo-page {
+ color: var(--grey-3);
+ font-size: 12px;
+ font-style: normal;
+ font-weight: 500;
+ line-height: 1.5;
+ letter-spacing: 0.48px;
+ text-transform: uppercase;
+}
