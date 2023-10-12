@@ -1,0 +1,42 @@
+
+.tooltip {
+ display: inline-block;
+ position: relative;
+ font-family: Inter, sans-serif;
+}
+
+.tooltip__trigger {
+ cursor: pointer;
+}
+
+.tooltip__bubble-top {
+ position: absolute;
+ display: none;
+ bottom: calc(50% + 12px + 12px);
+ left: 50%;
+ transform: translateX(-50%);
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 1.5;
+ padding: 13px 21px 8px;
+ background: var(--primary);
+ color: var(--grey-2);
+ border-radius: 10px;
+ box-shadow: var(--card-shadow);
+ width: 129px;
+}
+
+.tooltip__bubble-top:after {
+ content: '';
+ position: absolute;
+ left: 50%;
+ bottom: -16px;
+ border: 10px solid transparent;
+ border-top: 6px solid var(--primary);
+ transform: translateX(-50%);
+}
+
+.tooltip__trigger:hover ~ .tooltip__bubble-top {
+ display: block;
+}
