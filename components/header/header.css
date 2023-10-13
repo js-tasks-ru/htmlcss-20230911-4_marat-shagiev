@@ -8,10 +8,11 @@
  font-size: 50px;
  line-height: 1.28;
 }
-.header__bg-color_white {
- background-color: var(--white);
-}
 
-.header__border_none {
+/**
+* modifier for inner component page
+*/
+.header_inner {
+ background-color: var(--white);
  border: none;
 }

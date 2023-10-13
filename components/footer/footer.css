@@ -20,18 +20,30 @@
  font-width: 400;
 }
 
-.footer__inner {
+.footer__wrapper {
  display: flex;
  flex-flow: column nowrap;
  align-items: center;
 }
 
-.footer__title-demo-page {
- color: var(--grey-3);
+/**
+* modifier for inner component page
+*/
+.footer_inner {
+ border: none;
+ padding-top: 56px;
+ padding-bottom: 56px;
+ background: none;
+}
+
+.footer__title_inner {
+ /*h5*/
+ font-family: Inter, sans-serif;
  font-size: 12px;
  font-style: normal;
  font-weight: 500;
  line-height: 1.5;
  letter-spacing: 0.48px;
  text-transform: uppercase;
+ color: var(--grey-3);
 }

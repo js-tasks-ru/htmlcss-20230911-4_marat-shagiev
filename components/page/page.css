@@ -8,6 +8,12 @@
  flex-grow: 1;
 }
 
-.page__bg-color_grey-5 {
+/**
+* modifier for inner component page
+*/
+.page_inner {
+ display: grid;
+ grid-template-rows: auto 1fr auto;
+ grid-row-gap: 36px;
  background-color: var(--grey-5);
 }

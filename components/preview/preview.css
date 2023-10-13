@@ -4,9 +4,30 @@
  background-color: var(--grey-1);
 }
 
-.preview__inner {
+.preview__wrapper {
  display: flex;
  flex-wrap: wrap;
  gap: 30px;
  justify-content: center;
+}
+
+/**
+* modifier for inner component page
+*/
+.preview_inner {
+ padding-top: 0;
+ padding-bottom: 0;
+ background: none;
+ display: grid;
+ grid-template-columns: 229px minmax(396px, 1fr);
+ grid-column-gap: 56px;
+ height: 100%;
+}
+
+.preview__wrapper_block {
+ display: block;
+}
+
+.preview__wrapper_h100 {
+ height: 100%;
 }
