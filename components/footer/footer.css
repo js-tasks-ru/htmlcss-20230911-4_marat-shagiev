@@ -20,8 +20,28 @@
  font-width: 400;
 }
 
-.footer__inner {
+.footer__wrapper {
  display: flex;
  flex-flow: column nowrap;
  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+ .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+ }
+
+ .footer__title {
+  font-family: Inter, sans-serif;
+  font-size: 21px;
+  line-height: normal;
+ }
+
+ .footer__description {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+ }
 }

@@ -4,7 +4,7 @@
  background-color: var(--grey-1);
 }
 
-.preview__inner {
+.preview__wrapper {
  display: flex;
  flex-wrap: wrap;
  gap: 30px;
