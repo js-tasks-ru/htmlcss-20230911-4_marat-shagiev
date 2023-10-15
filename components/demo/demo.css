@@ -4,3 +4,13 @@
  border-radius: 12px;
  background-color: var(--white);
 }
+
+.demo__title{
+ color: var(--Gray-4, #495057);
+ /* h3 */
+ font-family: Inter, sans-serif;
+ font-size: 28px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 1.35;
+}
