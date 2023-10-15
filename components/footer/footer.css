@@ -26,6 +26,28 @@
  align-items: center;
 }
 
+/**
+* modifier for inner component page
+*/
+.footer_inner {
+ border: none;
+ padding-top: 56px;
+ padding-bottom: 56px;
+ background: none;
+}
+
+.footer_inner .footer__title {
+ /*h5*/
+ font-family: Inter, sans-serif;
+ font-size: 12px;
+ font-style: normal;
+ font-weight: 500;
+ line-height: 1.5;
+ letter-spacing: 0.48px;
+ text-transform: uppercase;
+ color: var(--grey-3);
+}
+
 @media screen and (max-width: 768px) {
 
  .footer {

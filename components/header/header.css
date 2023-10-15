@@ -1,6 +1,7 @@
 .header {
  border-bottom: 1px var(--grey-2) solid;
  color: var(--black);
+ padding: 24px;
 }
 
 .header__title {
@@ -8,9 +9,8 @@
  line-height: 1.28;
 }
 
-
 @media screen and (max-width: 768px) {
- .header__title{
+ .header__title {
   color: var(--grey-4);
   /* h3 */
   font-family: Inter, sans-serif;
@@ -19,4 +19,12 @@
   font-weight: 400;
   line-height: 1.35;
  }
+}
+
+/**
+* modifier for inner component page
+*/
+.header_inner {
+ background-color: var(--white);
+ border: none;
 }
