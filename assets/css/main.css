@@ -81,3 +81,11 @@
 body {
  font-family: 'Roboto', sans-serif;
 }
+
+
+/**
+* transitions only after page load
+*/
+.preload * {
+ transition: none !important;
+}
