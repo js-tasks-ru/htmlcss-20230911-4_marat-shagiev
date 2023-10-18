@@ -1,6 +1,8 @@
 .sidebar {
+
 }
-.sidebar__menu-title{
+
+.sidebar__menu-title {
  color: var(--black);
  /* h4 */
  font-family: Inter, sans-serif;
@@ -11,6 +13,7 @@
  margin-bottom: 16px;
  margin-top: 0;
 }
+
 .sidebar__link {
  text-decoration: none;
  color: var(--Black);
@@ -23,6 +26,13 @@
  display: block;
  margin-bottom: 4px;
 }
+
 .sidebar__link_active {
  color: var(--notification);
+}
+
+@media screen and (max-width: 768px) {
+ .sidebar {
+  display: none;
+ }
 }

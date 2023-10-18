@@ -8,7 +8,7 @@
 @import '../../components/container/container.css';
 @import '../../components/demo/demo.css';
 @import '../../components/sidebar/sidebar.css';
-
+@import "../../components/logo/logo.css";
 :root {
  --white: #ffffff;
  --black: #212429;
