@@ -28,6 +28,9 @@
 
 .radio__icon {
  display: none;
+ height: 18px;
+ width: 18px;
+ color: var(--blue);
 }
 
 .radio__title {
@@ -53,8 +56,14 @@
 
 .radio__input:disabled ~ .radio__wrapper .radio__box {
  background-color: var(--grey-2);
+ border: none;
 }
 
 .radio__input:disabled ~ .radio__wrapper .radio__title {
  color: var(--grey-2);
 }
+
+.radio__input:disabled ~ .radio__wrapper .radio__icon {
+ display: none;
+}
+
