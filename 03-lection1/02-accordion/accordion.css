@@ -25,7 +25,7 @@ font: [font-style||font-variant||font-weight] font-size [/line-height] font-fami
  position: relative;
 }
 
-.accordion__title::-webkit-details-marker { /* нестандартный псевдоэлемент Google Chrome */
+.accordion__title:-webkit-details-marker { /* нестандартный псевдоэлемент Google Chrome */
  display: none;
 }
 
@@ -34,7 +34,6 @@ font: [font-style||font-variant||font-weight] font-size [/line-height] font-fami
  font: inherit;
  padding: 16px 0 8px 0;
  margin: 0;
- opacity: 0;
 }
 
 .accordion__arrow-down {
