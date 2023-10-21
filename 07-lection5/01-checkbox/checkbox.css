@@ -28,6 +28,9 @@
 
 .checkbox__icon {
  display: none;
+ color: var(--white);
+ height: 15px;
+ width: 17px;
 }
 
 .checkbox__title {
@@ -49,5 +52,16 @@
 
 .checkbox__input:focus ~ .checkbox__wrapper .checkbox__title {
  text-decoration: underline;
+}
+
+.checkbox__input:disabled ~ .checkbox__wrapper .checkbox__box {
+ background-color: var(--grey-2);
+}
+
+.checkbox__input:disabled ~ .checkbox__wrapper .checkbox__title {
+ color: var(--grey-2);
+}
+.checkbox__input:disabled ~ .checkbox__wrapper .checkbox__box .checkbox__icon {
+ display: none;
 }
 
