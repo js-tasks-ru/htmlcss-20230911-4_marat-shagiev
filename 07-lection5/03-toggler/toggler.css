@@ -72,4 +72,8 @@ border: 2px solid var(--blue);
  display: none;
 }
 
+.toggler__input:focus ~ .toggler__wrapper .toggler__title {
+ text-decoration: underline;
+}
+
 
