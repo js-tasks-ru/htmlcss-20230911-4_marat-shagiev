@@ -2,6 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Template</title>
 		<link rel="stylesheet" href="../assets/css/normalize.css">
 		<link rel="stylesheet" href="../assets/css/main.css">
@@ -10,7 +11,21 @@
 
 		<div class="page page_inner">
 
-			<header class="header header_inner"></header>
+			<header class="header header_inner">
+
+				<svg class="header__burger">
+					<use href="../assets/images/icons-sprite.svg#burger"></use>
+				</svg>
+
+				<div class="container">
+					<div class="logo">
+						<svg class="logo__svg">
+							<use href="../assets/images/logo.svg#logo"></use>
+						</svg>
+					</div>
+				</div>
+
+			</header>
 
 			<div class="preview__wrapper preview__wrapper_block preview__wrapper_h100">
 				<div class="container container_h100">
