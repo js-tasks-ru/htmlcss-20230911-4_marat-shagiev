@@ -2,10 +2,22 @@
 <!-- Страница с полем ввода -->
 <html lang="ru">
     <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
     </head>
     <body>
+<form class="input">
 
+    <label class="input_label">
+        <h2 class="input__title">Title</h2>
+        <input type="text" class="input__text" placeholder="Placeholder">
+        <svg class="input__icon">
+            <use href="../../assets/images/icons-sprite.svg#error"></use>
+        </svg>
+    </label>
+    <span class="input__validation-info">Все неправильно! Ну-ка перезаполняй!</span>
+</form>
     </body>
 </html>
