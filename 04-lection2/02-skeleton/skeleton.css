@@ -45,3 +45,28 @@
 .skelet__rectangle_w_90ps {
  width: 90%;
 }
+
+/**
+* background animation
+*/
+
+.skelet__ellipse, .skelet__rectangle {
+ animation: bg 1.5s linear infinite;
+ animation-fill-mode: forwards;
+ background-size: 200%;
+}
+
+@keyframes bg {
+ from {
+  background-position-x: 400%
+ }
+ 20% {
+  background-position-x: 300%
+ }
+ 50% {
+  background-position-x: 200%
+ }
+ to {
+  background-position-x: 0;
+ }
+}
