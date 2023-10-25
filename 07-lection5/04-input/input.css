@@ -1,11 +1,10 @@
 .input {
  display: inline-flex;
- flex-direction: column;
+ flex-direction: column-reverse;
  gap: 5px;
 }
 
 .input__label {
- position: relative;
 }
 
 .input__title {
@@ -18,6 +17,10 @@
  letter-spacing: 0.48px;
  text-transform: uppercase;
  margin: 0;
+}
+
+.input__inner {
+ position: relative;
 }
 
 .input__text {
@@ -52,8 +55,16 @@
  display: none;
 }
 
-.input__validation-info {
- color: var(--grey-3);
+.input__icon_success{
+ display: block;
+ color: var(--success);
+}
+.input__icon_invalid{
+ display: block;
+ color: var(--error);
+}
+
+.input__message {
  font-family: Inter, sans-serif;
  font-size: 12px;
  font-style: normal;
@@ -63,6 +74,20 @@
  display: none;
 }
 
+.input__message_success  {
+ display: block;
+ color: var(--success);
+}
+
+.input__message_invalid {
+ display: block;
+ color: var(--error);
+}
+
 .input__text:focus {
  outline: var(--blue) solid 1px;
+}
+
+.input__message_invalid ~ .input__label .input__text:focus {
+ outline: var(--error) solid 1px;
 }
