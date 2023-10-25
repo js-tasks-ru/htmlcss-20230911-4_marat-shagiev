@@ -55,3 +55,20 @@
  background: var(--histogram-primary);
  flex-grow: 1;
 }
+
+/**
+* Animation
+*/
+.histogram__bars {
+ transform-origin: bottom;
+ animation: bars 0.5s ease-in-out;
+}
+
+@keyframes bars {
+ from {
+  transform: scaleY(0)
+ }
+ to {
+  transform: scaleY(100%)
+ }
+}

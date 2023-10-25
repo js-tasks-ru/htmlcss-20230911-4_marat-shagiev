@@ -1,0 +1,16 @@
+.logo {
+ display: flex;
+ justify-content: flex-start;
+}
+
+.logo__svg {
+ color: var(--black);
+ height: 32px;
+ width: 110px;
+}
+
+@media screen and (max-width: 768px) {
+ .logo {
+  justify-content: center;
+ }
+}
