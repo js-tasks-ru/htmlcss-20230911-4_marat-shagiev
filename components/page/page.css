@@ -17,3 +17,10 @@
  grid-row-gap: 36px;
  background-color: var(--grey-5);
 }
+
+@media screen and (max-width: 768px) {
+ .page_inner {
+  background-color: var(--white);
+  grid-row-gap: 32px;
+ }
+}

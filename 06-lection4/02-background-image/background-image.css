@@ -1,0 +1,26 @@
+.bg-img {
+ background-image: url("public/forest_400.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ width: 100vw;
+ height: 100vh;
+ background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+ .bg-img {
+  background-image: url("public/forest_768.jpg");
+ }
+}
+
+@media screen and (min-width: 1024px) {
+ .bg-img {
+  background-image: url("public/forest_1024.jpg");
+ }
+}
+
+@media screen and (min-width: 2560px) {
+ .bg-img {
+  background-image: url("public/forest_2560.jpg");
+ }
+}

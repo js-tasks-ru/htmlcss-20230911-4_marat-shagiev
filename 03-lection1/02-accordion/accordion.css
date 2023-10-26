@@ -42,32 +42,13 @@ font: [font-style||font-variant||font-weight] font-size [/line-height] font-fami
  position: absolute;
  top: 0;
  right: 0;
-}
-
-.accordion__item .accordion__arrow-down {
- animation: cls .2s ease-in-out;
- animation-fill-mode: forwards;
+ transition: transform .3s ease-out;
 }
 
 .accordion__item[open] .accordion__arrow-down {
- animation: opn .2s ease-in-out;
- animation-fill-mode: forwards;
+ transform: rotate(180deg);
 }
 
-@keyframes opn {
- from {
-  transform: rotate(0);
- }
- to {
-  transform: rotate(180deg);
- }
-}
 
-@keyframes cls {
- from {
-  transform: rotate(180deg);
- }
- to {
-  transform: rotate(0);
- }
-}
+
+
