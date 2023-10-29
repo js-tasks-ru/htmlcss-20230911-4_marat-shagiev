@@ -1,12 +1,6 @@
 .header {
- border-bottom: 1px var(--grey-2) solid;
  color: var(--black);
- padding: 24px 0;
-}
-
-.header__title {
- font-size: 50px;
- line-height: 1.28;
+ padding: 24px 0 0 0;
 }
 
 .header__burger {
@@ -17,21 +11,12 @@
 * modifier for inner component page
 */
 .header_inner {
- background-color: var(--white);
+ /*background-color: var(--white);*/
  border: none;
+ padding-bottom: 24px;
 }
 
-
 @media screen and (max-width: 768px) {
- .header__title {
-  color: var(--grey-4);
-  /* h3 */
-  font-family: Inter, sans-serif;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 400;
- }
-
  .header_inner {
   background-color: var(--grey-5);
  }
@@ -50,14 +35,5 @@
 }
 
 @media screen and (max-width: 400px) {
- .header__title {
-  color: var(--grey-4);
-  /* h3 */
-  font-family: Inter, sans-serif;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.35;
- }
 }
 

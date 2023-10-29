@@ -9,6 +9,9 @@
 @import '../../components/demo/demo.css';
 @import '../../components/sidebar/sidebar.css';
 @import "../../components/logo/logo.css";
+@import "../../components/h1/h1.css";
+@import "../../components/tabs/tabs.css";
+
 :root {
  --white: #ffffff;
  --black: #212429;
