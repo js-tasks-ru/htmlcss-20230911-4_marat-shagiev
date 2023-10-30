@@ -26,6 +26,16 @@
  background-color: var(--white);
 }
 
+.checkbox__box:before{
+ content: '';
+ height: 28px;
+ width: 28px;
+ background: var(--grey-3);
+ position: absolute;
+ z-index: -1;
+ border-radius: 40%;
+}
+
 .checkbox__icon {
  display: none;
  color: var(--white);
@@ -63,5 +73,11 @@
 }
 .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__box .checkbox__icon {
  display: none;
+}
+
+.checkbox__input:checked ~ .checkbox__wrapper .checkbox__box:before {
+ transform: scale(350%);
+ opacity: 0;
+ transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 
