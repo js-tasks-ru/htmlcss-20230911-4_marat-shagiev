@@ -1,13 +1,12 @@
 .input {
  display: inline-flex;
- flex-direction: column-reverse;
  gap: 5px;
 }
 
-.input__label {
+.input__element {
 }
 
-.input__title {
+.input__label {
  color: var(--grey-3);
  font-family: Inter, sans-serif;
  font-size: 12px;
@@ -55,16 +54,7 @@
  display: none;
 }
 
-.input__icon_success{
- display: block;
- color: var(--success);
-}
-.input__icon_invalid{
- display: block;
- color: var(--error);
-}
-
-.input__message {
+.input__validation-info {
  font-family: Inter, sans-serif;
  font-size: 12px;
  font-style: normal;
@@ -74,20 +64,30 @@
  display: none;
 }
 
-.input__message_success  {
- display: block;
- color: var(--success);
-}
-
-.input__message_invalid {
- display: block;
- color: var(--error);
-}
-
 .input__text:focus {
  outline: var(--blue) solid 1px;
 }
 
-.input__message_invalid ~ .input__label .input__text:focus {
+.input_invalid .input__element .input__text {
  outline: var(--error) solid 1px;
+}
+
+.input_invalid .input__element .input__validation-info {
+ display: block;
+ color: var(--error);
+}
+
+.input_success .input__element .input__validation-info {
+ display: block;
+ color: var(--success);
+}
+
+.input_invalid .input__element .input__icon_invalid {
+ display: block;
+ color: var(--error);
+}
+
+.input_success .input__element .input__icon_success {
+ display: block;
+ color: var(--success);
 }
