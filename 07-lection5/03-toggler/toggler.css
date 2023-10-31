@@ -1,6 +1,10 @@
 .toggler {
  display: inline-flex;
 }
+.toggler_burger-menu{
+ display: block;
+ box-sizing: border-box;
+}
 
 .toggler__input {
  opacity: 0;
@@ -13,6 +17,10 @@
  flex-direction: row;
  align-items: center;
  gap: 12px;
+}
+.toggler__wrapper_burger-menu{
+ flex-direction: row-reverse;
+ justify-content: space-between;
 }
 
 .toggler__box {
