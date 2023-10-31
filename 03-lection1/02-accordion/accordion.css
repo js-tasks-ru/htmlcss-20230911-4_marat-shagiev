@@ -22,9 +22,10 @@ font: [font-style||font-variant||font-weight] font-size [/line-height] font-fami
 .accordion__title {
  list-style: none;
  display: block;
+ position: relative;
 }
 
-.accordion__title::-webkit-details-marker { /* нестандартный псевдоэлемент Google Chrome */
+.accordion__title:-webkit-details-marker { /* нестандартный псевдоэлемент Google Chrome */
  display: none;
 }
 
@@ -34,3 +35,20 @@ font: [font-style||font-variant||font-weight] font-size [/line-height] font-fami
  padding: 16px 0 8px 0;
  margin: 0;
 }
+
+.accordion__arrow-down {
+ width: 24px;
+ height: 24px;
+ position: absolute;
+ top: 0;
+ right: 0;
+ transition: transform .3s ease-out;
+}
+
+.accordion__item[open] .accordion__arrow-down {
+ transform: rotate(180deg);
+}
+
+
+
+
