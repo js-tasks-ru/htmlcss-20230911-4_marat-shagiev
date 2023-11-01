@@ -1,9 +1,11 @@
 .toggler {
  display: inline-flex;
 }
-.toggler_burger-menu{
+
+.toggler_burger-menu {
  display: block;
  box-sizing: border-box;
+ pointer-events: none;
 }
 
 .toggler__input {
@@ -18,7 +20,8 @@
  align-items: center;
  gap: 12px;
 }
-.toggler__wrapper_burger-menu{
+
+.toggler__wrapper_burger-menu {
  flex-direction: row-reverse;
  justify-content: space-between;
 }
@@ -33,6 +36,11 @@
  border-radius: 28px;
  background-color: var(--white);
  border: 1px solid var(--grey-2);
+}
+
+.toggler__box_burger-menu {
+ pointer-events: all;
+ cursor: pointer;
 }
 
 .toggler__circle {
@@ -53,16 +61,22 @@
  line-height: 1.5;
 }
 
-.toggler__input:checked ~ .toggler__wrapper .toggler__box{
-background-color: var(--blue);
+.toggler__title_burger-menu {
+ cursor: pointer;
+ pointer-events: all;
+}
+
+.toggler__input:checked ~ .toggler__wrapper .toggler__box {
+ background-color: var(--blue);
  border: none;
  justify-content: flex-end;
 }
-.toggler__input:checked ~ .toggler__wrapper .toggler__circle{
-border: 2px solid var(--blue);
+
+.toggler__input:checked ~ .toggler__wrapper .toggler__circle {
+ border: 2px solid var(--blue);
  height: 28px;
  width: 28px;
-/*border: none;*/
+ /*border: none;*/
  background-color: var(--white);
 }
 
@@ -71,7 +85,7 @@ border: 2px solid var(--blue);
  border: 1px solid var(--grey-2);
 }
 
-.toggler__input:disabled ~ .toggler__wrapper .toggler__box{
+.toggler__input:disabled ~ .toggler__wrapper .toggler__box {
  background-color: var(--grey-2);
  border: 1px solid var(--grey-2);
 }
