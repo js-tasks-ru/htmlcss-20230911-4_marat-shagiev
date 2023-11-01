@@ -54,32 +54,12 @@
  display: none;
 }
 
-.input__validation-info {
- font-family: Inter, sans-serif;
- font-size: 12px;
- font-style: normal;
- font-weight: 500;
- line-height: 1.5;
- letter-spacing: 0.48px;
- display: none;
-}
-
 .input__text:focus {
  outline: var(--blue) solid 1px;
 }
 
 .input_invalid .input__element .input__text {
  outline: var(--error) solid 1px;
-}
-
-.input_invalid .input__element .input__validation-info {
- display: block;
- color: var(--error);
-}
-
-.input_success .input__element .input__validation-info {
- display: block;
- color: var(--success);
 }
 
 .input_invalid .input__element .input__icon_invalid {
