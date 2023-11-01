@@ -6,11 +6,16 @@
  height: 367px;
  box-sizing: border-box;
  overflow: hidden;
+ color: inherit;
+ text-decoration: none;
 }
 
 .card__main {
  height: 100%;
  padding: 32px 25px 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .card__header {
