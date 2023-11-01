@@ -9,6 +9,9 @@
 @import '../../components/demo/demo.css';
 @import '../../components/sidebar/sidebar.css';
 @import "../../components/logo/logo.css";
+@import "../../components/h1/h1.css";
+@import "../../components/tabs/tabs.css";
+
 :root {
  --white: #ffffff;
  --black: #212429;
@@ -33,7 +36,7 @@
  --secondary: var(--purple);
  --secondary-hover: var(--dark-purple);
  --alternate: none;
- --alternate-color: var(--gray-4);
+ --alternate-color: var(--grey-4);
  --alternate-border: 1px solid var(--grey-3);
  --alternate-border-hover: var(--black);
 

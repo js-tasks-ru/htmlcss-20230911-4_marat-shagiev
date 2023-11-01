@@ -1,12 +1,17 @@
 .header {
- border-bottom: 1px var(--grey-2) solid;
  color: var(--black);
- padding: 24px 0;
+ padding: 24px 0 40px;
 }
 
 .header__title {
+ color: var(--black);
+ /* h1 */
+ font-family: Inter, Sans-Serif;
  font-size: 50px;
+ font-style: normal;
+ font-weight: 500;
  line-height: 1.28;
+ margin: 40px 0 0;
 }
 
 .header__burger {
@@ -20,7 +25,6 @@
  background-color: var(--white);
  border: none;
 }
-
 
 @media screen and (max-width: 768px) {
  .header__title {
@@ -60,4 +64,3 @@
   line-height: 1.35;
  }
 }
-
