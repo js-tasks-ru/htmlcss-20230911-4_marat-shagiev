@@ -3,6 +3,7 @@
  border-radius: 8px;
  padding: 24px 40px 32px 24px;
  background: var(--white);
+ width: 100%;
 }
 
 .skelet__item {

@@ -5,6 +5,7 @@ font: [font-style||font-variant||font-weight] font-size [/line-height] font-fami
 .accordion {
  color: var(--black);
  font: 400 16px/1.5 Inter, sans-serif;
+ width: 100%;
 }
 
 .accordion__item {
