@@ -1,11 +1,11 @@
 .toggler {
  display: inline-flex;
-}
-
-.toggler_burger-menu {
- display: block;
  box-sizing: border-box;
  pointer-events: none;
+}
+
+.toggler_d-block{
+ display: block;
 }
 
 .toggler__input {
@@ -19,10 +19,6 @@
  flex-direction: row;
  align-items: center;
  gap: 12px;
-}
-
-.toggler__wrapper_burger-menu {
- flex-direction: row-reverse;
  justify-content: space-between;
 }
 
@@ -36,9 +32,6 @@
  border-radius: 28px;
  background-color: var(--white);
  border: 1px solid var(--grey-2);
-}
-
-.toggler__box_burger-menu {
  pointer-events: all;
  cursor: pointer;
 }
@@ -59,9 +52,6 @@
  font-style: normal;
  font-weight: 400;
  line-height: 1.5;
-}
-
-.toggler__title_burger-menu {
  cursor: pointer;
  pointer-events: all;
 }
@@ -97,5 +87,3 @@
 .toggler__input:focus ~ .toggler__wrapper .toggler__title {
  text-decoration: underline;
 }
-
-
