@@ -9,6 +9,9 @@
  width: 100%;
 }
 
+.histogram__preview{
+}
+
 .histogram__header {
  display: flex;
  justify-content: space-between;

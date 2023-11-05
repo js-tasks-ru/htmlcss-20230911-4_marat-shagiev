@@ -5,13 +5,13 @@
  padding: 9% 8% 11%; /*28px 26px 32px when calendar width is 304px*/
  max-width: 304px;
  font-size: 20px;
+ box-sizing: border-box;
 }
 
-.calendar_preview{
+.calendar_preview {
  font-size: 13px;
- max-width: 202px;
- min-width: 202px;
- /*height: 215px;*/
+ width: 85%;
+ max-height: 222px;
  padding: 8% 7% 10%;
 }
 

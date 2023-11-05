@@ -1,8 +1,11 @@
-
 .tooltip {
  display: inline-block;
  position: relative;
  font-family: Inter, sans-serif;
+}
+
+.tooltip__preview {
+ transform: translateY(38px);
 }
 
 .tooltip__trigger {
@@ -40,5 +43,9 @@
 }
 
 .tooltip__trigger:hover ~ .tooltip__bubble-top {
+ display: block;
+}
+
+.tooltip__preview .tooltip__bubble-top {
  display: block;
 }
