@@ -19,11 +19,12 @@
  transition: opacity 200ms ease-in-out;
 }
 
-.btn__preview{
+.btn_preview{
  height: 30px;
  padding: 8px 12px;
  border-radius: 4px;
  font-size: 10px;
+ pointer-events: none;
 }
 
 .btn:disabled {

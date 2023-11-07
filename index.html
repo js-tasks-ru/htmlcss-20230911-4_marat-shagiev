@@ -228,30 +228,84 @@
                                     </a>
                                     <a href="pages/template.html" class="card">
                                         <div class="card__wrapper">
-                                            <div class="card__main">
-                                                <label class="radio">
-                                                    <input class="radio__input" type="radio" name="radio">
-                                                    <div class="radio__wrapper">
-                                                        <div class="radio__box"></div>
-                                                        <span class="radio__title">Default</span>
-                                                    </div>
-                                                </label>
-                                                <label class="radio">
-                                                    <input class="radio__input" type="radio" name="radio">
-                                                    <div class="radio__wrapper">
-                                                        <div class="radio__box"></div>
-                                                        <span class="radio__title">Default</span>
-                                                    </div>
-                                                </label>
-                                                <label class="toggler">
-                                                    <input class="toggler__input" type="checkbox">
-                                                    <div class="toggler__wrapper">
-                                                        <div class="toggler__box">
-                                                            <div class="toggler__circle"></div>
+                                            <div class="card__main card__main_preview_inputs">
+
+                                                <div class="container container_preview_inputs">
+
+                                                    <label class="checkbox checkbox_preview">
+
+                                                        <input type="checkbox" class="checkbox__input" checked>
+
+                                                        <div class="checkbox__wrapper">
+                                                            <div class="checkbox__box">
+                                                                <svg class="checkbox__icon">
+                                                                    <use href="assets/images/icons-sprite.svg#checked"></use>
+                                                                </svg>
+                                                            </div>
+
+                                                            <span class="checkbox__title">Default</span>
                                                         </div>
-                                                        <span class="toggler__title">Toggler</span>
+
+                                                    </label>
+                                                    <label class="checkbox checkbox_preview">
+
+                                                        <input type="checkbox" class="checkbox__input">
+
+                                                        <div class="checkbox__wrapper">
+                                                            <div class="checkbox__box">
+                                                                <svg class="checkbox__icon">
+                                                                    <use href="assets/images/icons-sprite.svg#checked"></use>
+                                                                </svg>
+                                                            </div>
+
+                                                            <span class="checkbox__title">Default</span>
+                                                        </div>
+
+                                                    </label>
+                                                    <label class="checkbox checkbox_preview" >
+
+                                                        <input type="checkbox" class="checkbox__input" disabled>
+
+                                                        <div class="checkbox__wrapper">
+                                                            <div class="checkbox__box">
+                                                                <svg class="checkbox__icon">
+                                                                    <use href="assets/images/icons-sprite.svg#checked"></use>
+                                                                </svg>
+                                                            </div>
+
+                                                            <span class="checkbox__title">Default</span>
+                                                        </div>
+
+                                                    </label>
+
+                                                </div>
+
+                                                <div class="container container_preview_inputs">
+
+                                                    <label class="radio radio_preview">
+                                                    <input class="radio__input" type="radio" name="radio">
+                                                    <div class="radio__wrapper">
+                                                        <div class="radio__box"></div>
+                                                        <span class="radio__title">Default</span>
                                                     </div>
                                                 </label>
+                                                    <label class="radio radio_preview">
+                                                        <input class="radio__input" type="radio" name="radio" checked>
+                                                        <div class="radio__wrapper">
+                                                            <div class="radio__box"></div>
+                                                            <span class="radio__title">Default</span>
+                                                        </div>
+                                                    </label>
+                                                    <label class="radio radio_preview">
+                                                        <input class="radio__input" type="radio" name="radio" disabled>
+                                                        <div class="radio__wrapper">
+                                                            <div class="radio__box"></div>
+                                                            <span class="radio__title">Default</span>
+                                                        </div>
+                                                    </label>
+
+                                                </div>
+
                                             </div>
                                             <header class="card__header">
                                                 <h2 class="card__title">Custom form elements</h2>
@@ -262,32 +316,36 @@
                                     <a href="pages/template.html" class="card">
                                         <div class="card__wrapper">
                                             <div class="card__main" style="position: relative">
-                                                <div id="modal" class="modal modal__preview">
+                                                <div id="modal" class="modal modal_preview">
 
                                                     <div class="modal__window">
 
-                                                        <div class="input input__preview">
-                                                            <div class="input__element">
-                                                                <label class="input__label">Label</label>
-                                                                <div class="input__inner">
-                                                                    <input type="text" class="input__text"
-                                                                           placeholder="Placeholder">
+                                                        <div class="container container_preview_modal-inputs">
+
+                                                            <div class="input input_preview">
+                                                                <div class="input__element">
+                                                                    <label class="input__label">Label</label>
+                                                                    <div class="input__inner">
+                                                                        <input type="text" class="input__text"
+                                                                               placeholder="Placeholder">
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
 
-                                                        <div class="input input__preview">
-                                                            <div class="input__element">
-                                                                <label class="input__label">Label</label>
-                                                                <div class="input__inner">
-                                                                    <input type="text" class="input__text"
-                                                                           placeholder="Placeholder">
+                                                            <div class="input input_preview">
+                                                                <div class="input__element">
+                                                                    <label class="input__label">Label</label>
+                                                                    <div class="input__inner">
+                                                                        <input type="text" class="input__text"
+                                                                               placeholder="Placeholder">
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
 
-                                                        <button class="btn btn_view_primary btn__preview">Primary
-                                                        </button>
+                                                            <button class="btn btn_view_primary btn_preview">Primary
+                                                            </button>
+
+                                                        </div>
 
                                                     </div>
 

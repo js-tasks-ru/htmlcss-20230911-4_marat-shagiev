@@ -19,8 +19,8 @@
  align-items: center;
 }
 
-.card__main{
-
+.card__main_preview_inputs{
+gap: 42px;
 }
 
 .card__header {

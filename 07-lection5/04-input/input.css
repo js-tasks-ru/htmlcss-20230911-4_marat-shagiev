@@ -4,9 +4,10 @@
  font-size: 12px;
 }
 
-.input__preview {
+.input_preview {
  width: 195px;
  font-size: 7px;
+ pointer-events: none;
 }
 
 .input__element {

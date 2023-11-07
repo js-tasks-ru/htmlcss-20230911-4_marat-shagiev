@@ -9,3 +9,20 @@
 .container_h100{
  height: 100%;
 }
+
+.container_preview_inputs {
+ display: flex;
+ flex-direction: column;
+ gap: 16px;
+ margin: 0;
+ padding: 0;
+}
+
+.container_preview_modal-inputs{
+ margin: 0;
+ padding: 0;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 7px;
+}
