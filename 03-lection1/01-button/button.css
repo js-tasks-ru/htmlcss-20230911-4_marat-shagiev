@@ -25,6 +25,7 @@
  border-radius: 4px;
  font-size: 10px;
  pointer-events: none;
+ min-width: 100px;
 }
 
 .btn:disabled {
@@ -64,5 +65,15 @@
 
 .btn_view_alternate:hover {
  border-color: var(--alternate-border-hover);
+}
+
+@media screen and (max-width: 768px) {
+ .btn_preview {
+  height: 20px;
+  min-width: 76px;
+  padding: 6px;
+  font-size: 7px;
+  letter-spacing: 0.5px;
+ }
 }
 

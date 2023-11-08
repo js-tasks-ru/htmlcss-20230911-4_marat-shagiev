@@ -1,4 +1,4 @@
-.container{
+.container {
  margin: 0 auto;
  max-width: 1140px;
  padding-left: 15px;
@@ -6,7 +6,7 @@
  box-sizing: border-box;
 }
 
-.container_h100{
+.container_h100 {
  height: 100%;
 }
 
@@ -18,11 +18,17 @@
  padding: 0;
 }
 
-.container_preview_modal-inputs{
+.container_preview_modal-inputs {
  margin: 0;
  padding: 0;
  display: flex;
  flex-direction: column;
  align-items: flex-start;
  gap: 7px;
+}
+
+@media screen and (max-width: 768) {
+ .container_preview_modal-inputs {
+  gap: 3px;
+ }
 }

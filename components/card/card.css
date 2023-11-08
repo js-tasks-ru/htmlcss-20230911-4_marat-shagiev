@@ -19,8 +19,12 @@
  align-items: center;
 }
 
-.card__main_preview_inputs{
-gap: 42px;
+.card__main_preview_inputs {
+ gap: 42px;
+}
+
+.card__main_preview_inputs-modal {
+
 }
 
 .card__header {
@@ -67,6 +71,10 @@ gap: 42px;
 
  .card__main {
   padding: 8px;
+ }
+
+ .card__main_preview_inputs-modal {
+  padding: 0;
  }
 
  .card__header {
