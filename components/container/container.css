@@ -4,6 +4,7 @@
  padding-left: 15px;
  padding-right: 15px;
  box-sizing: border-box;
+ font-size: 16px;
 }
 
 .container_h100 {
@@ -13,7 +14,7 @@
 .container_preview_inputs {
  display: flex;
  flex-direction: column;
- gap: 16px;
+ gap: 1em;
  margin: 0;
  padding: 0;
 }
@@ -27,8 +28,11 @@
  gap: 7px;
 }
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
  .container_preview_modal-inputs {
   gap: 3px;
+ }
+ .container_preview_inputs {
+
  }
 }
