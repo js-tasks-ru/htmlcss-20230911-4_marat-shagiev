@@ -6,17 +6,6 @@
  left: -10000px;
 }
 
-.tabs__input_all {
-}
-
-.tabs__input_elementary {
-}
-
-.tabs__input_simple {
-}
-
-.tabs__input_complex {
-}
 
 .tabs__scroller {
  background: var(--white);
@@ -45,42 +34,32 @@
  display: none;
 }
 
-.tabs__content_all {
-}
 
-.tabs__content_elementary {
-}
-
-.tabs__content_simple {
-}
-
-.tabs__content_complex {
-}
 
 .tabs__input_all:checked ~ .tabs__content_all,
-.tabs__input_elementary:checked ~ .tabs__content_elementary,
-.tabs__input_simple:checked ~ .tabs__content_simple,
-.tabs__input_complex:checked ~ .tabs__content_complex {
+.tabs__input_elements:checked ~ .tabs__content_elements,
+.tabs__input_containers:checked ~ .tabs__content_containers,
+.tabs__input_templates:checked ~ .tabs__content_templates {
  display: block;
 }
 
 .tabs__input_all:focus ~ .tabs__scroller .tabs__label_all,
-.tabs__input_elementary:focus ~ .tabs__scroller .tabs__label_elementary,
-.tabs__input_simple:focus ~ .tabs__scroller .tabs__label_simple,
-.tabs__input_complex:focus ~ .tabs__scroller .tabs__label_complex {
+.tabs__input_elements:focus ~ .tabs__scroller .tabs__label_elements,
+.tabs__input_containers:focus ~ .tabs__scroller .tabs__label_containers,
+.tabs__input_templates:focus ~ .tabs__scroller .tabs__label_templates {
  color: black;
 }
 
 .tabs__input_all:checked ~ .tabs__scroller .tabs__label_all,
-.tabs__input_elementary:checked ~ .tabs__scroller .tabs__label_elementary,
-.tabs__input_simple:checked ~ .tabs__scroller .tabs__label_simple,
-.tabs__input_complex:checked ~ .tabs__scroller .tabs__label_complex {
+.tabs__input_elements:checked ~ .tabs__scroller .tabs__label_elements,
+.tabs__input_containers:checked ~ .tabs__scroller .tabs__label_containers,
+.tabs__input_templates:checked ~ .tabs__scroller .tabs__label_templates {
  border-bottom: 5px solid black;
 }
 
 .tabs__input_all:hover ~ .tabs__scroller .tabs__label_all,
-.tabs__input_elementary:hover ~ .tabs__scroller .tabs__label_elementary,
-.tabs__input_simple:hover ~ .tabs__scroller .tabs__label_simple,
-.tabs__input_complex:hover ~ .tabs__scroller .tabs__label_complex {
+.tabs__input_elements:hover ~ .tabs__scroller .tabs__label_elements,
+.tabs__input_containers:hover ~ .tabs__scroller .tabs__label_containers,
+.tabs__input_templates:hover ~ .tabs__scroller .tabs__label_templates {
  border-bottom: 5px solid black;
 }
