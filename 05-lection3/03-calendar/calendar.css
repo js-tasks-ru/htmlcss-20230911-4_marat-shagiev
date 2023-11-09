@@ -75,3 +75,12 @@
 .calendar__item_range_inner {
  background: var(--calendar-range);
 }
+
+@media screen and (max-width: 768px) {
+ .calendar_preview{
+  font-size: 12px;
+  border: none;
+  width: 100%;
+  padding: 4% 4% 5%;
+ }
+}
