@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/main.css">
+        <script defer src="10-lection8/01-theme-changer/theme-changer.js"></script>
     </head>
     <body>
 
@@ -16,15 +17,41 @@
                     <use href="./assets/images/icons-sprite.svg#burger"></use>
                 </svg>
                 <div class="container">
-                    <div class="logo">
-                        <svg class="logo__svg">
-                            <use href="assets/images/logo.svg#logo"></use>
-                        </svg>
+                    <div class="header__nav">
+                        <div class="logo">
+                            <svg class="logo__svg">
+                                <use href="assets/images/logo.svg#logo"></use>
+                            </svg>
+                        </div>
+                        <nav class="header__menu">
+                            <a href="#" class="header__menu-item">Components</a>
+                            <a href="#" class="header__menu-item">About</a>
+                            <a href="#" class="header__menu-item">Contacts</a>
+                        </nav>
+                        <div class="header__theme-switcher">
+
+                            <label class="toggler">
+                                <input class="toggler__input" type="checkbox">
+                                <div class="toggler__wrapper">
+                                    <svg class="toggler__icon">
+                                        <use href="./assets/images/icons-sprite.svg#theme-light"></use>
+                                    </svg>
+                                    <div class="toggler__box">
+                                        <div class="toggler__circle"></div>
+                                    </div>
+                                    <svg class="toggler__icon">
+                                            <use href="./assets/images/icons-sprite.svg#theme-dark"></use>
+                                    </svg>
+                                </div>
+                            </label>
+
+                        </div>
                     </div>
                 </div>
                 <div class="container">
                     <h1 class="header__title">Reusable componets library</h1>
                 </div>
+
             </header>
 
             <main class="page__main">

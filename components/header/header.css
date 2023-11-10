@@ -3,6 +3,12 @@
  padding: 24px 0 40px;
 }
 
+.header__nav {
+ display: grid;
+ grid-template-columns: 1fr auto auto;
+ gap: 56px;
+}
+
 .header__title {
  color: var(--black);
  /* h1 */
