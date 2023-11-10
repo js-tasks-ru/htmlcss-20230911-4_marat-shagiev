@@ -1,4 +1,5 @@
 .tabs {
+ height: 100%;
 }
 
 .tabs__input {
@@ -32,6 +33,7 @@
 
 .tabs__content {
  display: none;
+ height: 100%;
 }
 
 

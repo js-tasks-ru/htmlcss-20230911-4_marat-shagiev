@@ -2,6 +2,7 @@
  padding-top: 65px;
  padding-bottom: 65px;
  background-color: var(--grey-1);
+ height: 100%;
 }
 
 .preview__wrapper {
