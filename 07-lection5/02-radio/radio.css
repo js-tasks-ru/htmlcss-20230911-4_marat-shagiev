@@ -19,7 +19,7 @@
  height: 28px;
  width: 28px;
  border-radius: 50%;
- border: 1px solid var(--grey-2);
+ border: 1px solid var(--border-alternate);
  display: flex;
  align-items: center;
  justify-content: center;
@@ -30,13 +30,13 @@
  content: '';
  height: 18px;
  width: 18px;
- background: var(--blue);
+ background: var(--accent-primary);
  border-radius: 50%;
  display: none;
 }
 
 .radio__title {
- color: var(--grey-4);
+ color: var(--title-alternate);
  font-family: Inter, sans-serif;
  font-size: 16px;
  font-style: normal;
@@ -45,7 +45,7 @@
 }
 
 .radio__input:checked ~ .radio__wrapper .radio__box {
- border: 2px solid var(--blue);
+ border: 2px solid var(--accent-primary);
 }
 
 .radio__input:checked ~ .radio__wrapper .radio__box:after {
@@ -57,14 +57,14 @@
 }
 
 .radio__input:disabled ~ .radio__wrapper .radio__box {
- background-color: var(--grey-2);
+ background-color: var(--disabled-primary);
  border: none;
 }
 
 .radio__input:disabled ~ .radio__wrapper .radio__title {
- color: var(--grey-2);
+ color: var(--disabled-primary);
 }
 
-.radio__input:disabled ~ .radio__wrapper .radio__box:before {
+.radio__input:disabled ~ .radio__wrapper .radio__box:after {
  display: none;
 }

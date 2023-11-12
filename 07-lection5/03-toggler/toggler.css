@@ -23,24 +23,24 @@
  justify-content: flex-start;
  align-items: center;
  border-radius: 28px;
- background-color: var(--white);
- border: 1px solid var(--grey-2);
+ background-color: var(--bg-primary);
+ border: 1px solid var(--border-alternate);
  padding-left: 1px;
 
 }
 
 .toggler__circle {
- background-color: var(--grey-2);
+ background-color: var(--color-alternate);
  height: 24px;
  width: 24px;
  border-radius: 50%;
- border: 1px solid var(--white);
+ border: 1px solid var(--color-invert);
  box-sizing: border-box;
  transition: transform .3s ease-in;
 }
 
 .toggler__title {
- color: var(--grey-4);
+ color: var(--title-alternate);
  font-family: Inter, sans-serif;
  font-size: 16px;
  font-style: normal;
@@ -51,44 +51,44 @@
 .toggler__icon {
  height: 24px;
  width: 24px;
- color: var(--grey-3);
+ color: var(--color-secondary);
  transition: color .3s ease-in-out;
 }
 
 .toggler__icon_theme-light {
- color: var(--grey-4);
+ color: var(--text-secondary);
 }
 
 .toggler__input:checked ~ .toggler__wrapper .toggler__box {
- background-color: var(--blue);
+ background-color: var(--accent-primary);
  border: none;
 }
 
 .toggler__input:checked ~ .toggler__wrapper .toggler__circle {
- border: 1px solid var(--blue);
+ border: 1px solid var(--accent-primary);
  height: 24px;
  width: 24px;
  /*border: none;*/
- background-color: var(--white);
+ background-color: var(--bg-primary);
  transform: translateX(23px);
 }
 
 .toggler__input:checked ~ .toggler__wrapper .toggler__icon_theme-dark {
- color: var(--grey-4);
+ color: var(--text-secondary);
 }
 
 .toggler__input:checked ~ .toggler__wrapper .toggler__icon_theme-light {
- color: var(--grey-3);
+ color: var(--color-secondary);
 }
 
 .toggler__input:disabled ~ .toggler__wrapper .toggler__circle {
- background-color: var(--grey-3);
- border: 1px solid var(--grey-2);
+ background-color: var(--disabled-secondary);
+ border: 1px solid var(--border-alternate);
 }
 
 .toggler__input:disabled ~ .toggler__wrapper .toggler__box {
- background-color: var(--grey-2);
- border: 1px solid var(--grey-2);
+ background-color: var(--color-alternate);
+ border: 1px solid var(--border-alternate);
 }
 
 .toggler__input:disabled ~ .toggler__wrapper .toggler__icon {

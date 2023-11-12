@@ -1,16 +1,16 @@
 .header {
- color: var(--black);
+ color: var(--color-primary);
  padding: 24px 0 40px;
 }
 
-.header__nav {
+.header__top-level {
  display: grid;
  grid-template-columns: 1fr auto auto;
  gap: 56px;
 }
 
 .header__title {
- color: var(--black);
+ color: var(--title-primary);
  /* h1 */
  font-family: Inter, Sans-Serif;
  font-size: 50px;
@@ -28,13 +28,13 @@
 * modifier for inner component page
 */
 .header_inner {
- background-color: var(--white);
+ background-color: var(--bg-primary);
  border: none;
 }
 
 @media screen and (max-width: 768px) {
  .header__title {
-  color: var(--grey-4);
+  color: var(--title-alternate);
   /* h3 */
   font-family: Inter, sans-serif;
   font-size: 42px;
@@ -43,30 +43,33 @@
  }
 
  .header_inner {
-  background-color: var(--grey-5);
+  background-color: var(--bg-secondary);
  }
 
  .header__burger {
   display: block;
   height: 24px;
   width: 24px;
-  color: var(--black);
+  color: var(--color-primary);
   position: absolute;
   top: 24px;
   left: 15px;
   margin: 2px;
   box-sizing: border-box;
  }
+
+ .header__nav, .header__theme-switcher {
+  display: none;
+ }
+
+ .header__top-level {
+  grid-template-columns: 1fr;
+ }
 }
 
 @media screen and (max-width: 400px) {
  .header__title {
-  color: var(--grey-4);
-  /* h3 */
-  font-family: Inter, sans-serif;
   font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.35;
  }
 }

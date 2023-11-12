@@ -9,6 +9,7 @@
  cursor: pointer;
  height: 24px;
  width: 24px;
+ color: var(--color-primary);
 }
 
 .tooltip__bubble-top {
@@ -22,7 +23,7 @@
  font-weight: 400;
  line-height: 1.5;
  padding: 13px 21px 8px;
- background: var(--primary);
+ background: var(--btn-primary);
  color: var(--grey-2);
  border-radius: 10px;
  box-shadow: var(--card-shadow);
@@ -35,7 +36,7 @@
  left: 50%;
  bottom: -16px;
  border: 10px solid transparent;
- border-top: 6px solid var(--primary);
+ border-top: 6px solid var(--btn-primary);
  transform: translateX(-50%);
 }
 

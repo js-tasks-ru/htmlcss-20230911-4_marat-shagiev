@@ -1,10 +1,10 @@
 .footer {
- background-color: var(--white);
- border-top: 1px var(--grey-2) solid;
+ background-color: var(--bg-primary);
+ border-top: 1px var(--border-alternate) solid;
  text-align: center;
  padding-top: 100px;
  padding-bottom: 100px;
- color: var(--black);
+ color: var(--color-primary);
 }
 
 .footer__title {
@@ -45,7 +45,7 @@
  line-height: 1.5;
  letter-spacing: 0.48px;
  text-transform: uppercase;
- color: var(--grey-3);
+ color: var(--title-secondary);
 }
 
 @media screen and (max-width: 768px) {

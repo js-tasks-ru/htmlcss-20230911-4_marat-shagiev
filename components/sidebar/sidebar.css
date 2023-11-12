@@ -3,7 +3,7 @@
 }
 
 .sidebar__menu-title {
- color: var(--black);
+ color: var(--title-primary);
  /* h4 */
  font-family: Inter, sans-serif;
  font-size: 20px;
@@ -16,7 +16,7 @@
 
 .sidebar__link {
  text-decoration: none;
- color: var(--Black);
+ color: var(--link-blur-primary);
  /* small */
  font-family: Inter, sans-serif;
  font-size: 14px;

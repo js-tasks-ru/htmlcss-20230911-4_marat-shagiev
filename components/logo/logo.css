@@ -4,7 +4,7 @@
 }
 
 .logo__svg {
- color: var(--black);
+ color: var(--color-primary);
  height: 32px;
  width: 110px;
 }

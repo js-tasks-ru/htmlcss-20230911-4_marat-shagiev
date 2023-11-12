@@ -1,8 +1,8 @@
 .skelet {
- border: 1px solid var(--grey-3);
+ border: 1px solid var(--border-secondary);
  border-radius: 8px;
  padding: 24px 40px 32px 24px;
- background: var(--white);
+ background: var(--bg-primary);
 }
 
 .skelet__item {
