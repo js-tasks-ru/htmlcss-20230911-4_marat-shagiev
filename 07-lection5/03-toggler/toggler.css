@@ -1,5 +1,13 @@
+/*lection-08-theme-changer*/
+
 .toggler {
  display: inline-flex;
+ box-sizing: border-box;
+ pointer-events: none;
+}
+
+.toggler_d-block{
+ display: block;
 }
 
 .toggler__input {
@@ -13,6 +21,7 @@
  flex-direction: row;
  align-items: center;
  gap: 12px;
+ justify-content: space-between;
 }
 
 .toggler__box {
@@ -26,7 +35,8 @@
  background-color: var(--bg-primary);
  border: 1px solid var(--border-alternate);
  padding-left: 1px;
-
+ pointer-events: all;
+ cursor: pointer;
 }
 
 .toggler__circle {
@@ -37,6 +47,7 @@
  border: 1px solid var(--color-invert);
  box-sizing: border-box;
  transition: transform .3s ease-in;
+ box-sizing: border-box;
 }
 
 .toggler__title {
@@ -46,6 +57,8 @@
  font-style: normal;
  font-weight: 400;
  line-height: 1.5;
+ cursor: pointer;
+ pointer-events: all;
 }
 
 .toggler__icon {
@@ -68,7 +81,6 @@
  border: 1px solid var(--accent-primary);
  height: 24px;
  width: 24px;
- /*border: none;*/
  background-color: var(--bg-primary);
  transform: translateX(23px);
 }
@@ -98,5 +110,3 @@
 .toggler__input:focus ~ .toggler__wrapper .toggler__title {
  text-decoration: underline;
 }
-
-
