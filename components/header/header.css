@@ -32,6 +32,32 @@
  border: none;
 }
 
+.header__nav-item {
+ color: var(--link-blur-secondary);
+ font-family: Inter, Sans-Serif;
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 1.5;
+ text-decoration: none;
+}
+
+.header__nav-item_active {
+ color: var(--link-active-secondary);
+}
+
+.header__nav-item:focus {
+ /*color: var(--link-active-secondary);*/
+ text-decoration: underline;
+ list-style: none;
+ outline: none;
+}
+
+.header__nav-item:hover {
+ /*color: var(--link-active-secondary);*/
+ text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
  .header__title {
   color: var(--title-alternate);

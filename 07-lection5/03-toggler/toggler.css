@@ -66,6 +66,8 @@
  width: 24px;
  color: var(--color-secondary);
  transition: color .3s ease-in-out;
+ pointer-events: all;
+ cursor: pointer;
 }
 
 .toggler__icon_theme-light {
