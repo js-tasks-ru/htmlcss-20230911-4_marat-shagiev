@@ -162,38 +162,41 @@ html[data-theme-dark] {
 * SEMANTIC LAYER OF VARIABLES
 */
 
- --color-primary: var(--black);
+ --color-primary: var(--grey-5);
+ --color-secondary: var(--white);
+ --color-alternate: var(--grey-2);
+ --color-invert: var(--black);
 
  --error: var(--red-1);
  --success: var(--blue);
  --notification: var(--red-2);
 
- --bg-primary: var(--white);
- --bg-secondary: var(--grey-5);
- --bg-alternate: var(--grey-1);
+ --bg-primary: var(--black);
+ --bg-secondary: var(--grey-4);
+ --bg-alternate: var(--grey-4);
 
  --disabled-primary: var(grey-2);
  --disabled-secondary: var(grey-3);
 
- --title-primary: var(--black);
+ --title-primary: var(--grey-4);
  --title-secondary: var(--grey-3);
- --title-alternate: var(--grey-4);
+ --title-alternate: var(--grey-3);
 
- --subtitle-primary: var(--grey-4);
+ --subtitle-primary: var(--grey-3);
  --subtitle-secrondary: var(--grey-3);
 
- --text-primary: var(--black);
- --text-secondary: var(--grey-4);
- --text-invert: var(--white);
+ --text-primary: var(--grey-4);
+ --text-secondary: var(--grey-2);
+ --text-invert: var(--black);
 
  --link-active-primary: var(--red-1);
- --link-blur-primary: var(--black);
+ --link-blur-primary: var(--grey-4);
 
- --link-active-secondary: var(--black);
+ --link-active-secondary: var(--white);
  --link-blur-secondary: var(--grey-3);
 
  --border-alternate: var(--grey-2);
- --border-primary: var(--black);
+ --border-primary: var(--white);
  --border-secondary: var(--grey-3);
 
  --btn-primary: var(--blue);

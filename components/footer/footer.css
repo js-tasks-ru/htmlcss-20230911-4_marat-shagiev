@@ -4,13 +4,13 @@
  text-align: center;
  padding-top: 100px;
  padding-bottom: 100px;
- color: var(--color-primary);
 }
 
 .footer__title {
  font-size: 38px;
  font-weight: 500;
  line-height: 1.26;
+ color: var(--title-secondary);
 }
 
 .footer__description {
@@ -18,6 +18,7 @@
  font-size: 16px;
  line-height: 1.5;
  font-width: 400;
+ color: var(--text-secondary);
 }
 
 .footer__wrapper {

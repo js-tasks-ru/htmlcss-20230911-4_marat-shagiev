@@ -15,6 +15,7 @@
 
 .card__header {
  padding: 25px 25px 38px;
+ color: var(--title-secondary);
 }
 
 .card__title {
