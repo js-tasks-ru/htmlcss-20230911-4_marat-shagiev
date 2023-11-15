@@ -1,7 +1,8 @@
 .preview {
  padding-top: 65px;
  padding-bottom: 65px;
- background-color: var(--grey-1);
+ background-color: var(--bg-alternate);
+ height: 100%;
 }
 
 .preview__wrapper {
@@ -9,6 +10,7 @@
  flex-wrap: wrap;
  gap: 30px;
  justify-content: center;
+ height: 100%;
 }
 
 /**

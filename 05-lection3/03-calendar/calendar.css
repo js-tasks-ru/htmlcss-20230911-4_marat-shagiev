@@ -1,7 +1,7 @@
 .calendar {
- border: 1px solid var(--grey-3);
+ border: 1px solid var(--border-secondary);
  border-radius: 8px;
- background: var(--white);
+ background: var(--bg-primary);
  padding: 28px 26px 32px;
  width: 304px;
 }
@@ -27,7 +27,7 @@
  font-style: normal;
  font-weight: 600;
  line-height: 1.2;
- color: var(--calendar-primary);
+ color: var(--title-primary);
  margin-bottom: 24px;
  text-align: center;
 }
@@ -57,8 +57,8 @@
 }
 
 .calendar__item_range_edge {
- background: var(--blue-2);
- color: var(--white);
+ background: var(--accent-primary);
+ color: var(--text-invert);
  font-style: normal;
  font-weight: 400;
 }

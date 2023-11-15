@@ -1,4 +1,5 @@
 .tabs {
+ height: 100%;
 }
 
 .tabs__input {
@@ -19,8 +20,8 @@
 }
 
 .tabs__scroller {
- background: var(--white);
- border-bottom: 1px var(--grey-2) solid;
+ background: var(--bg-primary);
+ border-bottom: 1px var(--border-alternate) solid;
  overflow: hidden;
 }
 
@@ -36,13 +37,14 @@
 }
 
 .tabs__label {
- color: var(--grey-3);
+ color: var(--title-secondary);
  padding-bottom: 8px;
  white-space: nowrap;
 }
 
 .tabs__content {
  display: none;
+ height: 100%;
 }
 
 .tabs__content_all {
@@ -68,19 +70,19 @@
 .tabs__input_elementary:focus ~ .tabs__scroller .tabs__label_elementary,
 .tabs__input_simple:focus ~ .tabs__scroller .tabs__label_simple,
 .tabs__input_complex:focus ~ .tabs__scroller .tabs__label_complex {
- color: black;
+ color: var(--link-active-secondary);
 }
 
 .tabs__input_all:checked ~ .tabs__scroller .tabs__label_all,
 .tabs__input_elementary:checked ~ .tabs__scroller .tabs__label_elementary,
 .tabs__input_simple:checked ~ .tabs__scroller .tabs__label_simple,
 .tabs__input_complex:checked ~ .tabs__scroller .tabs__label_complex {
- border-bottom: 5px solid black;
+ border-bottom: 5px solid var(--border-primary);
 }
 
 .tabs__input_all:hover ~ .tabs__scroller .tabs__label_all,
 .tabs__input_elementary:hover ~ .tabs__scroller .tabs__label_elementary,
 .tabs__input_simple:hover ~ .tabs__scroller .tabs__label_simple,
 .tabs__input_complex:hover ~ .tabs__scroller .tabs__label_complex {
- border-bottom: 5px solid black;
+ border-bottom: 5px solid var(--border-primary);
 }

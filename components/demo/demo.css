@@ -2,11 +2,11 @@
  padding: 32px 48px;
  font-family: Inter, sans-serif;
  border-radius: 12px;
- background-color: var(--white);
+ background-color: var(--bg-primary);
 }
 
 .demo__title {
- color: var(--Gray-4, #495057);
+ color: var(--title-alternate);
  /* h3 */
  font-family: Inter, sans-serif;
  font-size: 28px;

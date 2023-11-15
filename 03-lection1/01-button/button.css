@@ -14,7 +14,7 @@
  font-weight: 500;
  line-height: normal;
  border: none;
- color: var(--white);
+ color: var(--btn-text);
  cursor: pointer;
  transition: opacity 200ms ease-in-out;
 }
@@ -28,11 +28,11 @@
  * Modifiers of block 'btn'
  */
 .btn_view_primary {
- background: var(--primary);
+ background: var(--btn-primary);
 }
 
 .btn_view_secondary {
- background: var(--secondary);
+ background: var(--btn-secondary);
 }
 
 .btn_view_primary, .btn_view_secondary {
@@ -40,21 +40,21 @@
 }
 
 .btn_view_alternate {
- background: var(--alternate);
- color: var(--alternate-color);
- border: var(--alternate-border);
+ background: var(--btn-alt);
+ color: var(--btn-alt-text);
+ border: var(--btn-alt-border);
  transition: border 200ms ease-in-out;
 }
 
 .btn_view_primary:hover {
- background: var(--primary-hover);
+ background: var(--btn-primary-hover);
 }
 
 .btn_view_secondary:hover {
- background: var(--secondary-hover);
+ background: var(--btn-secondary-hover);
 }
 
 .btn_view_alternate:hover {
- border-color: var(--alternate-border-hover);
+ border-color: var(--btn-alt-border-hover);
 }
 

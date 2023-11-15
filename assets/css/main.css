@@ -12,6 +12,7 @@
 @import "../../07-lection5/03-toggler/toggler.css";
 @import "../../components/h1/h1.css";
 @import "../../components/tabs/tabs.css";
+@import "../../07-lection5/03-toggler/toggler.css";
 
 
 
@@ -48,77 +49,169 @@
  --pink: #f784ad;
  --purple: #7048e8;
  --dark-purple: #5028c6;
- --blue: #374fc7;
- --blue-2: #4263eb;
+ --blue: #4263eb;
  --dark-blue: #2342c0;
- --red: #f03d3e;
+ --red-1: #f03d3e;
+ --red-2: #d84910;
  --grey-1: #f8f9fa;
  --grey-2: #dde2e5;
  --grey-3: #acb5bd;
  --grey-4: #495057;
- --grey-5: #F9FAFC;
- --error: var(--red);
- --success: var(--blue);
-
- /*BUTTONS*/
- --primary: var(--blue);
- --primary-hover: var(--dark-blue);
- --secondary: var(--purple);
- --secondary-hover: var(--dark-purple);
- --alternate: none;
- --alternate-color: var(--grey-4);
- --alternate-border: 1px solid var(--grey-3);
- --alternate-border-hover: var(--black);
-
- /**
- * histogram styles
- */
- --histogram-primary: var(--blue-2);
+ --grey-5: #f9fafc;
+ --shadow-light: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
+ --shadow-dark: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+ --bg-none: none;
 
  /**skeleton-bg*/
  --skelet-bg: linear-gradient(93deg, #dde2e5 6.44%, #e2e6e8 38.47%, #f3f5f5 56.48%, #e3e7ea 77.5%, #dde2e5 102.52%);
 
- --card-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
-
  /*CALENDAR*/
- --calendar-primary: #334D6E;
- --calendar-days: #90A0B7;
+ --calendar-primary: #334d6e;
+ --calendar-days: #90a0b7;
  --calendar-range: rgba(160, 177, 245, 0.2) /*#A0B1F5 with opacity 0.2*/;
-
-
-
-
-
-
-
-
-
-
 
  /* Modal dialog colors */
  --grey-modal-back: rgba(196, 196, 196, 0.5);
 
+ /**
+* SEMANTIC LAYER OF VARIABLES
+*/
 
+ --color-primary: var(--black);
+ --color-secondary: var(--grey-3);
+ --color-alternate: var(--grey-2);
+ --color-invert: var(--white);
 
+ --error: var(--red-1);
+ --success: var(--blue);
+ --notification: var(--red-2);
 
+ --bg-primary: var(--white);
+ --bg-secondary: var(--grey-5);
+ --bg-alternate: var(--grey-1);
 
+ --disabled-primary: var(--grey-2);
+ --disabled-secondary: var(--grey-3);
 
+ --title-primary: var(--black);
+ --title-secondary: var(--grey-3);
+ --title-alternate: var(--grey-4);
 
+ --subtitle-primary: var(--grey-4);
+ --subtitle-secrondary: var(--grey-3);
 
+ --text-primary: var(--black);
+ --text-secondary: var(--grey-4);
+ --text-invert: var(--white);
 
+ --link-active-primary: var(--red-1);
+ --link-blur-primary: var(--black);
 
+ --link-active-secondary: var(--black);
+ --link-blur-secondary: var(--grey-3);
 
- --notification: #D84910;
+ --border-alternate: var(--grey-2);
+ --border-primary: var(--black);
+ --border-secondary: var(--grey-3);
+
+ --btn-primary: var(--blue);
+ --btn-primary-hover: var(--dark-blue);
+ --btn-secondary: var(--purple);
+ --btn-secondary-hover: var(--dark-purple);
+ --btn-text: var(--white);
+ --btn-alt: var(--bg-none);
+ --btn-alt-text: var(--grey-4);
+ --btn-alt-border: 1px solid var(--grey-3);
+ --btn-alt-border-hover: var(--black);
+
+ --histogram-primary: var(--blue);
+
+ --card-shadow: var(--shadow-light);
+
+ --accent-primary: var(--blue);
 }
 
 body {
  font-family: 'Roboto', sans-serif;
 }
 
-
 /**
 * transitions only after page load
 */
 .preload * {
  transition: none !important;
+}
+
+/**
+***
+***
+***
+* COLORS
+* FOR
+* THE
+* DARK
+* THEME
+* MODE
+***
+***
+***
+**/
+
+html[data-theme-dark] {
+ /**
+* SEMANTIC LAYER OF VARIABLES
+*/
+
+ --color-primary: var(--grey-5);
+ --color-secondary: var(--white);
+ --color-alternate: var(--grey-2);
+ --color-invert: var(--black);
+
+ --error: var(--red-1);
+ --success: var(--blue);
+ --notification: var(--red-2);
+
+ --bg-primary: var(--black);
+ --bg-secondary: var(--grey-4);
+ --bg-alternate: var(--grey-4);
+
+ --disabled-primary: var(grey-2);
+ --disabled-secondary: var(grey-3);
+
+ --title-primary: var(--grey-4);
+ --title-secondary: var(--grey-3);
+ --title-alternate: var(--grey-3);
+
+ --subtitle-primary: var(--grey-3);
+ --subtitle-secrondary: var(--grey-3);
+
+ --text-primary: var(--grey-4);
+ --text-secondary: var(--grey-2);
+ --text-invert: var(--black);
+
+ --link-active-primary: var(--red-1);
+ --link-blur-primary: var(--grey-4);
+
+ --link-active-secondary: var(--white);
+ --link-blur-secondary: var(--grey-3);
+
+ --border-alternate: var(--grey-2);
+ --border-primary: var(--white);
+ --border-secondary: var(--grey-3);
+
+ --btn-primary: var(--blue);
+ --btn-primary-hover: var(--dark-blue);
+ --btn-secondary: var(--purple);
+ --btn-secondary-hover: var(--dark-purple);
+ --btn-text: var(--white);
+ --btn-alt: var(--bg-none);
+ --btn-alt-text: var(--grey-4);
+ --btn-alt-border: 1px solid var(--grey-3);
+ --btn-alt-border-hover: var(--black);
+
+ --histogram-primary: var(--blue);
+
+ --card-shadow: var(--shadow-dark);
+
+ --accent-primary: var(--blue);
 }

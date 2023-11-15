@@ -15,12 +15,12 @@
  display: grid;
  grid-template-rows: auto 1fr auto;
  grid-row-gap: 36px;
- background-color: var(--grey-5);
+ background-color: var(--bg-secondary);
 }
 
 @media screen and (max-width: 768px) {
  .page_inner {
-  background-color: var(--white);
+  background-color: var(--bg-primary);
   grid-row-gap: 32px;
  }
 }

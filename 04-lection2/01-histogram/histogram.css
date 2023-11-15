@@ -1,7 +1,7 @@
 .histogram {
- background: var(--white);
+ background: var(--bg-primary);
  border-radius: 8px;
- border: 1px solid var(--grey-3);
+ border: 1px solid var(--border-secondary);
  padding: 16px 24px 24px;
  display: flex;
  flex-flow: column nowrap;
