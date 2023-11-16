@@ -3,40 +3,50 @@
  display: inline-block;
  position: relative;
  font-family: Inter, sans-serif;
+ font-size: 16px;
 }
 
 .tooltip__trigger {
  cursor: pointer;
- height: 24px;
- width: 24px;
+/* height: 24px;
+ width: 24px;*/
+ height: 1.5em;
+ width: 1.5em;
  color: var(--color-primary);
 }
 
 .tooltip__bubble-top {
  position: absolute;
  display: none;
- bottom: calc(50% + 12px + 12px);
+ /*bottom: calc(50% + 12px + 12px);*/
+ bottom: calc(50% + .75em + .75em);
  left: 50%;
  transform: translateX(-50%);
- font-size: 16px;
+ /*font-size: 16px;*/
  font-style: normal;
  font-weight: 400;
  line-height: 1.5;
- padding: 13px 21px 8px;
+ /*padding: 13px 21px 8px;*/
+ padding: .81em 1.31em .5em;
  background: var(--btn-primary);
  color: var(--grey-2);
- border-radius: 10px;
+ /*border-radius: 10px;*/
+ border-radius: .625em;
  box-shadow: var(--card-shadow);
- width: 129px;
+ /*width: 129px;*/
+ width: 8.06em;
 }
 
 .tooltip__bubble-top:after {
  content: '';
  position: absolute;
  left: 50%;
- bottom: -16px;
- border: 10px solid transparent;
- border-top: 6px solid var(--btn-primary);
+ /*bottom: -16px;*/
+ bottom: -1em;
+ /*border: 10px solid transparent;*/
+ border: .625em solid transparent;
+ /*border-top: 6px solid var(--btn-primary);*/
+ border-top: .375em solid var(--btn-primary);
  transform: translateX(-50%);
 }
 
