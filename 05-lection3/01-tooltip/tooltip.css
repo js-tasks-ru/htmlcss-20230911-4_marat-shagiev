@@ -2,7 +2,7 @@
  display: inline-block;
  position: relative;
  font-family: Inter, sans-serif;
- font-size: 1em;
+ font-size: 16px;
 }
 
 .tooltip_preview {
@@ -51,4 +51,10 @@
 .tooltip__trigger:hover ~ .tooltip__bubble-top {
  display: block;
  opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+ .tooltip{
+  font-size: 12px;
+ }
 }
