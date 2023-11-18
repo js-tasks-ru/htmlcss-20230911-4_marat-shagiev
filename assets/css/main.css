@@ -9,10 +9,9 @@
 @import '../../components/demo/demo.css';
 @import '../../components/sidebar/sidebar.css';
 @import "../../components/logo/logo.css";
-@import "../../07-lection5/03-toggler/toggler.css";
-@import "../../components/h1/h1.css";
 @import "../../components/tabs/tabs.css";
 @import "../../07-lection5/03-toggler/toggler.css";
+@import "../../05-lection3/01-tooltip/tooltip.css";
 
 @import "../../07-lection5/01-checkbox/checkbox.css";
 @import "../../07-lection5/02-radio/radio.css";
