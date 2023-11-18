@@ -177,8 +177,8 @@ html[data-theme-dark] {
  --bg-secondary: var(--grey-4);
  --bg-alternate: var(--grey-4);
 
- --disabled-primary: var(grey-2);
- --disabled-secondary: var(grey-3);
+ --disabled-primary: var(--grey-4);
+ --disabled-secondary: var(--grey-3);
 
  --title-primary: var(--grey-4);
  --title-secondary: var(--grey-3);

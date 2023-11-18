@@ -67,15 +67,16 @@
 }
 
 .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__box {
- background: var(--color-secondary);
+ background: var(--disabled-primary);
+ border: none;
 }
 
 .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__box:before {
- background: var(--color-secondary);
+ background: var(--disabled-primary);
 }
 
 .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__title {
- color: var(--color-secondary);
+ color: var(--disabled-primary);
 }
 
 .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__box .checkbox__icon {
@@ -91,7 +92,7 @@
 
 @media screen and (max-width: 768px) {
  .checkbox{
-  font-size: 16px;
+  font-size: 14px;
  }
 }
 
