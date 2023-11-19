@@ -5,12 +5,8 @@
  */
 .btn {
  font-size: 1rem;
- min-height: 48px;
- min-height: 3em;
- min-width: 182px;
- min-width: 11.375em;
- padding: 15px 24px 14px;
- padding: .9375em 1.5em .875em;
+ min-width: 11em;
+ padding: .9em 1.5em .8em;
  border-radius: .5em;
  text-align: center;
  font-family: Roboto, sans-serif;
@@ -20,8 +16,12 @@
  border: none;
  color: var(--btn-text);
  cursor: pointer;
- /*transition: opacity 200ms ease-in-out;*/
  transition: transform 200ms ease-in-out;
+}
+
+.btn_preview {
+ font-size: .6rem;
+ margin-top: 1.5em;
 }
 
 .btn:disabled {
@@ -65,5 +65,11 @@
 
 .btn_view_alternate:hover {
  border-color: var(--btn-alt-border-hover);
+}
+
+@media screen and (max-width: 768px) {
+ .btn_preview {
+  font-size: .55rem;
+ }
 }
 
