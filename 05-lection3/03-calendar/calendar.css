@@ -1,9 +1,10 @@
 .calendar {
+ font-size: 1rem;
  border: 1px solid var(--border-secondary);
- border-radius: 8px;
+ border-radius: .75em;
  background: var(--bg-primary);
- padding: 28px 26px 32px;
- width: 304px;
+ padding: 1.75em 1.625em 2em;
+ width: 19em;
 }
 
 .calendar__wrapper {
@@ -23,20 +24,21 @@
 
 .calendar__title {
  font-family: Inter, sans-serif;
- font-size: 20px;
+ font-size: 1.25em;
  font-style: normal;
  font-weight: 600;
  line-height: 1.2;
  color: var(--title-primary);
- margin-bottom: 24px;
+ /* !!! 1.2em calc from 1.25 em, cause font size for this block is set to 1.25em */
+ margin-bottom: 1.2em;
  text-align: center;
 }
 
 .calendar__item {
- color: var(--calendar-primary);
+ color: var(--text-secondary);
  text-align: center;
  font-family: "Source Sans Pro", sans-serif;
- font-size: 16px;
+ font-size: 1em;
  font-style: normal;
  font-weight: 400;
  line-height: 1.25;
@@ -46,23 +48,63 @@
 }
 
 .calendar__item_day {
- color: var(--calendar-days);
+ color: var(--title-secondary);
  text-align: center;
  font-family: Inter, sans-serif;
- font-size: 14px;
+ font-size: .875em;
  font-style: normal;
  font-weight: 400;
  line-height: 1.4;
- margin-bottom: 16px;
+ margin-bottom: 1em;
 }
 
 .calendar__item_range_edge {
  background: var(--accent-primary);
- color: var(--text-invert);
+ color: var(--white);
  font-style: normal;
  font-weight: 400;
 }
 
 .calendar__item_range_inner {
  background: var(--calendar-range);
+}
+
+.calendar_preview {
+ font-size: .55rem;
+}
+
+.calendar_preview .calendar__title {
+ font-size: 1.5em;
+ margin-bottom: .5em;
+}
+
+.calendar_preview .calendar__item {
+ font-size: 1.2em;
+}
+
+.calendar_preview .calendar__item_day {
+ margin-bottom: -0.5em;
+ font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+ .calendar_preview {
+  font-size: .35rem;
+  padding: 0;
+  border: none;
+ }
+ .calendar_preview .calendar__title {
+  font-size: 2em;
+  margin-bottom: .5em;
+ }
+
+ .calendar_preview .calendar__item {
+  font-size: 1.8em;
+ }
+
+ .calendar_preview .calendar__item_day {
+  margin-bottom: -0.1em;
+  font-size: 1.7em;
+ }
+
 }
