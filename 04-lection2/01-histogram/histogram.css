@@ -1,11 +1,16 @@
 .histogram {
+ font-size: 1rem;
  background: var(--bg-primary);
  border-radius: 8px;
+ border-radius: .5em;
  border: 1px solid var(--border-secondary);
  padding: 16px 24px 24px;
+ padding: 1em 1.5em 1.5em;
  display: flex;
  flex-flow: column nowrap;
  gap: 6px;
+ gap: .375em;
+ width: 100%;
 }
 
 .histogram__header {
@@ -16,16 +21,20 @@
 
 .histogram__title {
  font-size: 16px;
+ font-size: 1em;
  font-style: normal;
  font-weight: 400;
  line-height: 1.5;
+ color: var(--title-primary)
 }
 
 .histogram__link {
  margin-top: 3px;
+ margin-top: 3px;
  color: var(--histogram-primary);
  text-decoration: none;
  font-size: 16px;
+ font-size: 1em;
  font-style: normal;
  font-weight: 400;
  line-height: 1.5;
@@ -38,17 +47,21 @@
 
 .histogram__value {
  font-size: 20px;
+ font-size: 1.25em;
  font-style: normal;
  font-weight: 400;
  line-height: 1.3;
+ color:var(--text-primary)
 }
 
 .histogram__bars {
  height: 50px;
+ height: 3.125em;
  display: flex;
  align-items: flex-end;
  gap: 1px;
  margin-top: 39px;
+ margin-top: 2.4375em;
 }
 
 .histogram__bar {
@@ -70,5 +83,11 @@
  }
  to {
   transform: scaleY(100%)
+ }
+}
+
+@media screen and (max-width: 768px) {
+ .histogram{
+  font-size: .5rem;
  }
 }
