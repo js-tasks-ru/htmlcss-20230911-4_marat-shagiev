@@ -1,288 +1,300 @@
 <!DOCTYPE html>
 <!-- Главная страница -->
 <html lang="ru">
-	<head>
-		<title>htmlcss-20230911-home-page</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="./assets/css/main.css">
-		<script defer src="10-lection8/01-theme-changer/theme-changer.js"></script>
-	</head>
-	<body>
+    <head>
+        <title>htmlcss-20230911-home-page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <script defer src="10-lection8/01-theme-changer/theme-changer.js"></script>
+    </head>
+    <body>
 
-		<div class="page">
+        <div class="page">
 
-			<header class="header">
-				<svg class="header__burger">
-					<use href="./assets/images/icons-sprite.svg#burger"></use>
-				</svg>
-				<div class="container">
-					<div class="header__top-level">
-						<div class="logo">
-							<svg class="logo__svg">
-								<use href="assets/images/logo.svg#logo"></use>
-							</svg>
-						</div>
-						<nav class="header__nav">
-							<a href="index.html" class="header__nav-item header__nav-item_active">Components</a>
-							<a href="#" class="header__nav-item">About</a>
-							<a href="#" class="header__nav-item">Contacts</a>
-						</nav>
-						<div class="header__theme-switcher">
+            <header class="header">
+                <svg class="header__burger">
+                    <use href="./assets/images/icons-sprite.svg#burger"></use>
+                </svg>
+                <div class="container">
+                    <div class="header__top-level">
+                        <div class="logo">
+                            <svg class="logo__svg">
+                                <use href="assets/images/logo.svg#logo"></use>
+                            </svg>
+                        </div>
+                        <nav class="header__nav">
+                            <a href="index.html" class="header__nav-item header__nav-item_active">Components</a>
+                            <a href="#" class="header__nav-item">About</a>
+                            <a href="#" class="header__nav-item">Contacts</a>
+                        </nav>
+                        <div class="header__theme-switcher">
 
-							<label class="toggler">
-								<input id="theme-changer" class="toggler__input" type="checkbox">
-								<div class="toggler__wrapper">
-									<svg class="toggler__icon toggler__icon_theme-light">
-										<use href="./assets/images/icons-sprite.svg#theme-light"></use>
-									</svg>
-									<div class="toggler__box">
-										<div class="toggler__circle"></div>
-									</div>
-									<svg class="toggler__icon toggler__icon_theme-dark">
-										<use href="./assets/images/icons-sprite.svg#theme-dark"></use>
-									</svg>
-								</div>
-							</label>
+                            <label class="toggler">
+                                <input id="theme-changer" class="toggler__input" type="checkbox">
+                                <div class="toggler__wrapper">
+                                    <svg class="toggler__icon toggler__icon_theme-light">
+                                        <use href="./assets/images/icons-sprite.svg#theme-light"></use>
+                                    </svg>
+                                    <div class="toggler__box">
+                                        <div class="toggler__circle"></div>
+                                    </div>
+                                    <svg class="toggler__icon toggler__icon_theme-dark">
+                                        <use href="./assets/images/icons-sprite.svg#theme-dark"></use>
+                                    </svg>
+                                </div>
+                            </label>
 
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<h1 class="header__title">Reusable componets library</h1>
-				</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <h1 class="header__title">Reusable componets library</h1>
+                </div>
 
-			</header>
+            </header>
 
-			<main class="page__main">
+            <main class="page__main">
 
-				<div class="tabs">
-					<input type="radio" id="#all-tab" class="tabs__input tabs__input_all" name="tab" checked>
-					<input type="radio" id="#elementary-tab" class="tabs__input tabs__input_elementary" name="tab">
-					<input type="radio" id="#simple-tab" class="tabs__input tabs__input_simple" name="tab">
-					<input type="radio" id="#complex-tab" class="tabs__input tabs__input_complex" name="tab">
+                <div class="tabs">
+                    <input type="radio" id="#all-tab" class="tabs__input tabs__input_all" name="tab" checked>
+                    <input type="radio" id="#elementary-tab" class="tabs__input tabs__input_elementary" name="tab">
+                    <input type="radio" id="#simple-tab" class="tabs__input tabs__input_simple" name="tab">
+                    <input type="radio" id="#complex-tab" class="tabs__input tabs__input_complex" name="tab">
 
-					<nav class="tabs__scroller">
-						<div class="container">
-							<div class="tabs__inner">
-								<label for="#all-tab" class="tabs__label tabs__label_all">All components</label>
-								<label for="#elementary-tab"
-									   class="tabs__label tabs__label_elementary">Elementary</label>
-								<label for="#simple-tab" class="tabs__label tabs__label_simple">Simple</label>
-								<label for="#complex-tab" class="tabs__label tabs__label_complex">Complex</label></div>
-						</div>
-					</nav>
+                    <nav class="tabs__scroller">
+                        <div class="container">
+                            <div class="tabs__inner">
+                                <label for="#all-tab" class="tabs__label tabs__label_all">All components</label>
+                                <label for="#elementary-tab"
+                                       class="tabs__label tabs__label_elementary">Elementary</label>
+                                <label for="#simple-tab" class="tabs__label tabs__label_simple">Simple</label>
+                                <label for="#complex-tab" class="tabs__label tabs__label_complex">Complex</label></div>
+                        </div>
+                    </nav>
 
-					<div class="tabs__content tabs__content_all">
-						<div class="preview">
+                    <div class="tabs__content tabs__content_all">
+                        <div class="preview">
 
-							<div class="container">
-								<div class="preview__wrapper">
+                            <div class="container">
+                                <div class="preview__wrapper">
 
-									<a href="#" class="card">
-										<div class="card__wrapper">
-											<div class="card__main">
-												<div class="tooltip tooltip_preview">
+                                    <a href="#" class="card">
+                                        <div class="card__wrapper">
+                                            <div class="card__main">
+                                                <div class="tooltip tooltip_preview">
 
-													<svg class="tooltip__trigger">
-														<use href="assets/images/icons-sprite.svg#tooltip"></use>
-													</svg>
+                                                    <svg class="tooltip__trigger">
+                                                        <use href="assets/images/icons-sprite.svg#tooltip"></use>
+                                                    </svg>
 
-													<div class="tooltip__bubble-top">
-														Текст подсказки
-													</div>
+                                                    <div class="tooltip__bubble-top">
+                                                        Текст подсказки
+                                                    </div>
 
-												</div>
-											</div>
-											<header class="card__header">
-												<h2 class="card__title">Tooltip</h2>
-												<h3 class="card__subtitle">Container</h3>
-											</header>
-										</div>
-									</a>
-									<a href="#" class="card">
-										<div class="card__wrapper">
-											<div class="card__main"></div>
-											<header class="card__header">
-												<h2 class="card__title">Custom form elements</h2>
-												<h3 class="card__subtitle">Element</h3>
-											</header>
-										</div>
-									</a>
-									<a href="#" class="card">
-										<div class="card__wrapper">
-											<div class="card__main">
+                                                </div>
+                                            </div>
+                                            <header class="card__header">
+                                                <h2 class="card__title">Tooltip</h2>
+                                                <h3 class="card__subtitle">Container</h3>
+                                            </header>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card">
+                                        <div class="card__wrapper">
+                                            <div class="card__main"></div>
+                                            <header class="card__header">
+                                                <h2 class="card__title">Custom form elements</h2>
+                                                <h3 class="card__subtitle">Element</h3>
+                                            </header>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card">
+                                        <div class="card__wrapper">
+                                            <div class="card__main">
 
-												<div class="calendar calendar_preview">
+                                                <div class="calendar calendar_preview">
 
-													<div class="calendar__title">Октябрь 2023</div>
-													<div class="calendar__wrapper">
-														<div class="calendar__inner">
-															<!-- DAYS-HEADER -->
-															<div class="calendar__item calendar__item_day">Пн</div>
-															<div class="calendar__item calendar__item_day">Вт</div>
-															<div class="calendar__item calendar__item_day">Ср</div>
-															<div class="calendar__item calendar__item_day">Чт</div>
-															<div class="calendar__item calendar__item_day">Пт</div>
-															<div class="calendar__item calendar__item_day">Сб</div>
-															<div class="calendar__item calendar__item_day">Вс</div>
-															<!-- EMPTY -->
-															<div class="calendar__item"></div>
-															<div class="calendar__item"></div>
-															<div class="calendar__item"></div>
-															<div class="calendar__item"></div>
-															<div class="calendar__item"></div>
-															<div class="calendar__item"></div>
-															<!-- 13 SEPTEMBER NUMBERS -->
-															<div class="calendar__item">1</div>
-															<div class="calendar__item">2</div>
-															<div class="calendar__item">3</div>
-															<div class="calendar__item">4</div>
-															<div class="calendar__item">5</div>
-															<div class="calendar__item">6</div>
-															<div class="calendar__item">7</div>
-															<div class="calendar__item">8</div>
-															<div class="calendar__item">9</div>
-															<div class="calendar__item">10</div>
-															<div class="calendar__item">11</div>
-															<div class="calendar__item">12</div>
-															<div class="calendar__item">13</div>
-															<div class="calendar__item">14</div>
-															<div class="calendar__item">15</div>
-															<!-- RANGE -->
-															<div class="calendar__item calendar__item_range_edge">16</div>
-															<div class="calendar__item calendar__item_range_inner">17</div>
-															<div class="calendar__item calendar__item_range_inner">18</div>
-															<div class="calendar__item calendar__item_range_inner">19</div>
-															<div class="calendar__item calendar__item_range_edge">20</div>
-															<!-- RANGE -->
-															<div class="calendar__item">21</div>
-															<div class="calendar__item">22</div>
-															<div class="calendar__item">23</div>
-															<div class="calendar__item">24</div>
-															<div class="calendar__item">25</div>
-															<div class="calendar__item">26</div>
-															<div class="calendar__item">27</div>
-															<div class="calendar__item">28</div>
-															<div class="calendar__item">29</div>
-															<div class="calendar__item">30</div>
-															<div class="calendar__item">31</div>
-															<!-- EMPTY -->
-															<div class="calendar__item"></div>
-															<div class="calendar__item"></div>
-															<div class="calendar__item"></div>
-															<div class="calendar__item"></div>
-															<div class="calendar__item"></div>
-														</div>
-													</div>
+                                                    <div class="calendar__title">Октябрь 2023</div>
+                                                    <div class="calendar__wrapper">
+                                                        <div class="calendar__inner">
+                                                            <!-- DAYS-HEADER -->
+                                                            <div class="calendar__item calendar__item_day">Пн</div>
+                                                            <div class="calendar__item calendar__item_day">Вт</div>
+                                                            <div class="calendar__item calendar__item_day">Ср</div>
+                                                            <div class="calendar__item calendar__item_day">Чт</div>
+                                                            <div class="calendar__item calendar__item_day">Пт</div>
+                                                            <div class="calendar__item calendar__item_day">Сб</div>
+                                                            <div class="calendar__item calendar__item_day">Вс</div>
+                                                            <!-- EMPTY -->
+                                                            <div class="calendar__item"></div>
+                                                            <div class="calendar__item"></div>
+                                                            <div class="calendar__item"></div>
+                                                            <div class="calendar__item"></div>
+                                                            <div class="calendar__item"></div>
+                                                            <div class="calendar__item"></div>
+                                                            <!-- 13 SEPTEMBER NUMBERS -->
+                                                            <div class="calendar__item">1</div>
+                                                            <div class="calendar__item">2</div>
+                                                            <div class="calendar__item">3</div>
+                                                            <div class="calendar__item">4</div>
+                                                            <div class="calendar__item">5</div>
+                                                            <div class="calendar__item">6</div>
+                                                            <div class="calendar__item">7</div>
+                                                            <div class="calendar__item">8</div>
+                                                            <div class="calendar__item">9</div>
+                                                            <div class="calendar__item">10</div>
+                                                            <div class="calendar__item">11</div>
+                                                            <div class="calendar__item">12</div>
+                                                            <div class="calendar__item">13</div>
+                                                            <div class="calendar__item">14</div>
+                                                            <div class="calendar__item">15</div>
+                                                            <!-- RANGE -->
+                                                            <div class="calendar__item calendar__item_range_edge">16
+                                                            </div>
+                                                            <div class="calendar__item calendar__item_range_inner">17
+                                                            </div>
+                                                            <div class="calendar__item calendar__item_range_inner">18
+                                                            </div>
+                                                            <div class="calendar__item calendar__item_range_inner">19
+                                                            </div>
+                                                            <div class="calendar__item calendar__item_range_edge">20
+                                                            </div>
+                                                            <!-- RANGE -->
+                                                            <div class="calendar__item">21</div>
+                                                            <div class="calendar__item">22</div>
+                                                            <div class="calendar__item">23</div>
+                                                            <div class="calendar__item">24</div>
+                                                            <div class="calendar__item">25</div>
+                                                            <div class="calendar__item">26</div>
+                                                            <div class="calendar__item">27</div>
+                                                            <div class="calendar__item">28</div>
+                                                            <div class="calendar__item">29</div>
+                                                            <div class="calendar__item">30</div>
+                                                            <div class="calendar__item">31</div>
+                                                            <!-- EMPTY -->
+                                                            <div class="calendar__item"></div>
+                                                            <div class="calendar__item"></div>
+                                                            <div class="calendar__item"></div>
+                                                            <div class="calendar__item"></div>
+                                                            <div class="calendar__item"></div>
+                                                        </div>
+                                                    </div>
 
-												</div>
+                                                </div>
 
-											</div>
-											<header class="card__header">
-												<h2 class="card__title">Calendar</h2>
-												<h3 class="card__subtitle">Container</h3>
-											</header>
-										</div>
-									</a>
-									<a href="#" class="card">
-										<div class="card__wrapper">
-											<div class="card__main">
+                                            </div>
+                                            <header class="card__header">
+                                                <h2 class="card__title">Calendar</h2>
+                                                <h3 class="card__subtitle">Container</h3>
+                                            </header>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card">
+                                        <div class="card__wrapper">
+                                            <div class="card__main">
 
-												<div class="modal modal_preview">
-													<div class="modal__window">
+                                                <div class="modal modal_preview">
+                                                    <div class="modal__window">
 
-														<div class="input input_success input_preview" data-preview-d-none>
-															<div class="input__element">
-																<label class="input__label">Name</label>
-																<div class="input__inner">
-																	<input type="text" class="input__text" value="Marat Shagiev" placeholder="Placeholder">
-																	<svg class="input__icon input__icon_invalid">
-																		<use href="assets/images/icons-sprite.svg#error"></use>
-																	</svg>
-																	<svg class="input__icon input__icon_success">
-																		<use href="assets/images/icons-sprite.svg#success"></use>
-																	</svg>
-																</div>
-															</div>
-														</div>
+                                                        <div class="modal__inner-col">
+                                                            <div class="modal__container">
+                                                                <div class="input input_success input_preview"
+                                                                     data-preview-d-none>
+                                                                    <div class="input__element">
+                                                                        <label class="input__label">Name</label>
+                                                                        <div class="input__inner">
+                                                                            <input type="text" class="input__text"
+                                                                                   value="Marat Shagiev"
+                                                                                   placeholder="Placeholder">
+                                                                            <svg class="input__icon input__icon_invalid">
+                                                                                <use href="assets/images/icons-sprite.svg#error"></use>
+                                                                            </svg>
+                                                                            <svg class="input__icon input__icon_success">
+                                                                                <use href="assets/images/icons-sprite.svg#success"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
 
-														<div class="input input_invalid input_preview" >
-															<div class="input__element">
-																<label class="input__label">Phone</label>
-																<div class="input__inner">
-																	<input type="text" class="input__text" placeholder="+7 (999) 999-99-99">
-																	<svg class="input__icon input__icon_invalid">
-																		<use href="assets/images/icons-sprite.svg#error"></use>
-																	</svg>
-																	<svg class="input__icon input__icon_success">
-																		<use href="assets/images/icons-sprite.svg#success"></use>
-																	</svg>
-																</div>
-															</div>
-														</div>
+                                                                <div class="input input_invalid input_preview">
+                                                                    <div class="input__element">
+                                                                        <label class="input__label">Phone</label>
+                                                                        <div class="input__inner">
+                                                                            <input type="text" class="input__text"
+                                                                                   placeholder="+7 (999) 999-99-99">
+                                                                            <svg class="input__icon input__icon_invalid">
+                                                                                <use href="assets/images/icons-sprite.svg#error"></use>
+                                                                            </svg>
+                                                                            <svg class="input__icon input__icon_success">
+                                                                                <use href="assets/images/icons-sprite.svg#success"></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
 
-														<div class="card__margin-div_h-0-6em"></div>
+                                                            <button class="btn btn_preview btn_view_primary">Submit
+                                                            </button>
+                                                        </div>
 
-														<button class="btn btn_preview btn_view_primary">Submit</button>
+                                                    </div>
 
-													</div>
+                                                </div>
 
-												</div>
+                                            </div>
+                                            <header class="card__header">
+                                                <h2 class="card__title">Modal dialog</h2>
+                                                <h3 class="card__subtitle">Container</h3>
+                                            </header>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card">
+                                        <div class="card__wrapper">
+                                            <div class="card__main"></div>
+                                            <header class="card__header">
+                                                <h2 class="card__title">Histogram</h2>
+                                                <h3 class="card__subtitle">Element</h3>
+                                            </header>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card">
+                                        <div class="card__wrapper">
+                                            <div class="card__main"></div>
+                                            <header class="card__header">
+                                                <h2 class="card__title">Avatar</h2>
+                                                <h3 class="card__subtitle">Element</h3>
+                                            </header>
+                                        </div>
+                                    </a>
 
-											</div>
-											<header class="card__header">
-												<h2 class="card__title">Modal dialog</h2>
-												<h3 class="card__subtitle">Container</h3>
-											</header>
-										</div>
-									</a>
-									<a href="#" class="card">
-										<div class="card__wrapper">
-											<div class="card__main"></div>
-											<header class="card__header">
-												<h2 class="card__title">Histogram</h2>
-												<h3 class="card__subtitle">Element</h3>
-											</header>
-										</div>
-									</a>
-									<a href="#" class="card">
-										<div class="card__wrapper">
-											<div class="card__main"></div>
-											<header class="card__header">
-												<h2 class="card__title">Avatar</h2>
-												<h3 class="card__subtitle">Element</h3>
-											</header>
-										</div>
-									</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-								</div>
-							</div>
-						</div>
-					</div>
+                </div>
 
-				</div>
+            </main>
 
-			</main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__wrapper">
+                        <h2 class="footer__title"> About </h2>
+                        <p class="footer__description">
+                            This project is a collection of professionally designed, pre-built, fully responsive HTML
+                            snippets
+                            you can drop into
+                            your projects. Get started by checking out our free preview components, or browsing the PNG
+                            previews
+                            in the categories
+                            you're most curious about.
+                        </p>
+                    </div>
+                </div>
+            </footer>
 
-			<footer class="footer">
-				<div class="container">
-					<div class="footer__wrapper">
-						<h2 class="footer__title"> About </h2>
-						<p class="footer__description">
-							This project is a collection of professionally designed, pre-built, fully responsive HTML
-							snippets
-							you can drop into
-							your projects. Get started by checking out our free preview components, or browsing the PNG
-							previews
-							in the categories
-							you're most curious about.
-						</p>
-					</div>
-				</div>
-			</footer>
+        </div>
 
-		</div>
-
-	</body>
+    </body>
 </html>
