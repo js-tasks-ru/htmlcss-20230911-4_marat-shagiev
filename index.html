@@ -7,21 +7,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./assets/css/main.css">
 		<script defer src="10-lection8/01-theme-changer/theme-changer.js"></script>
+		<script defer src="09-lection7/01-burger-menu/burger-menu.js"></script>
 	</head>
 	<body>
 
 		<div class="page">
 
 			<header class="header">
-				<svg class="header__burger">
+				<svg class="header__burger" id="burger-menu-open">
 					<use href="./assets/images/icons-sprite.svg#burger"></use>
 				</svg>
 				<div class="container">
 					<div class="header__top-level">
 						<div class="logo">
-							<svg class="logo__svg">
-								<use href="assets/images/logo.svg#logo"></use>
-							</svg>
+							<a class="logo__link" href="#">
+								<svg class="logo__svg">
+									<use href="assets/images/logo.svg#logo"></use>
+								</svg>
+							</a>
 						</div>
 						<nav class="header__nav">
 							<a href="index.html" class="header__nav-item header__nav-item_active">Components</a>
@@ -54,22 +57,78 @@
 
 			</header>
 
+			<div class="burger-menu" id="burger-menu">
+
+				<header class="burger-menu__header">
+					<div class="burger-menu__button burger-menu__button_close">
+						<svg class="burger-menu__button-svg" id="burger-menu-close">
+							<use href="assets/images/icons-sprite.svg#close"></use>
+						</svg>
+					</div>
+					<div class="logo">
+						<a class="logo__link" href="#">
+							<svg class="logo__svg">
+								<use href="assets/images/logo.svg#logo"></use>
+							</svg>
+						</a>
+					</div>
+				</header>
+
+				<nav class="burger-menu__main">
+					<section class="burger-menu__nav-section">
+
+						<label class="toggler toggler_d-block">
+							<input class="toggler__input" id="theme-changer-burger" type="checkbox">
+							<div class="toggler__wrapper toggler__wrapper_burger-menu">
+								<span class="toggler__title toggler__box_burger-menu">Dark mode</span>
+								<div class="toggler__box toggler__box_burger-menu">
+									<div class="toggler__circle"></div>
+								</div>
+							</div>
+						</label>
+
+					</section>
+					<section class="burger-menu__nav-section">
+						<h4 class="burger-menu__title">Elements</h4>
+						<ul class="burger-menu__items">
+							<li class="burger-menu__item"><a class="burger-menu__link" href="#">Custom form elements</a>
+							</li>
+							<li class="burger-menu__item"><a class="burger-menu__link" href="#">Histogram</a></li>
+							<li class="burger-menu__item"><a class="burger-menu__link" href="#">Avatar</a></li>
+						</ul>
+					</section>
+					<section class="burger-menu__nav-section">
+						<h4 class="burger-menu__title">Containers</h4>
+						<ul class="burger-menu__items">
+							<li class="burger-menu__item"><a class="burger-menu__link" href="#">Tooltip</a></li>
+							<li class="burger-menu__item"><a class="burger-menu__link" href="#">Calendar</a></li>
+							<li class="burger-menu__item"><a class="burger-menu__link" href="#">Modal dialog</a></li>
+						</ul>
+					</section>
+					<section class="burger-menu__nav-section">
+						<h4 class="burger-menu__title">Templates</h4>
+						<ul class="burger-menu__items">
+						</ul>
+					</section>
+				</nav>
+			</div>
+
 			<main class="page__main">
 
 				<div class="tabs">
 					<input type="radio" id="#all-tab" class="tabs__input tabs__input_all" name="tab" checked>
-					<input type="radio" id="#elementary-tab" class="tabs__input tabs__input_elementary" name="tab">
-					<input type="radio" id="#simple-tab" class="tabs__input tabs__input_simple" name="tab">
-					<input type="radio" id="#complex-tab" class="tabs__input tabs__input_complex" name="tab">
+					<input type="radio" id="#elementary-tab" class="tabs__input tabs__input_elements" name="tab">
+					<input type="radio" id="#simple-tab" class="tabs__input tabs__input_containers" name="tab">
+					<input type="radio" id="#complex-tab" class="tabs__input tabs__input_templates" name="tab">
 
 					<nav class="tabs__scroller">
 						<div class="container">
 							<div class="tabs__inner">
 								<label for="#all-tab" class="tabs__label tabs__label_all">All components</label>
-								<label for="#elementary-tab"
-									   class="tabs__label tabs__label_elementary">Elementary</label>
-								<label for="#simple-tab" class="tabs__label tabs__label_simple">Simple</label>
-								<label for="#complex-tab" class="tabs__label tabs__label_complex">Complex</label></div>
+								<label for="#elementary-tab" class="tabs__label tabs__label_elements">Elements</label>
+								<label for="#simple-tab" class="tabs__label tabs__label_containers">Containers</label>
+								<label for="#complex-tab" class="tabs__label tabs__label_templates">Templates</label>
+							</div>
 						</div>
 					</nav>
 
@@ -150,11 +209,16 @@
 															<div class="calendar__item">14</div>
 															<div class="calendar__item">15</div>
 															<!-- RANGE -->
-															<div class="calendar__item calendar__item_range_edge">16</div>
-															<div class="calendar__item calendar__item_range_inner">17</div>
-															<div class="calendar__item calendar__item_range_inner">18</div>
-															<div class="calendar__item calendar__item_range_inner">19</div>
-															<div class="calendar__item calendar__item_range_edge">20</div>
+															<div class="calendar__item calendar__item_range_edge">16
+															</div>
+															<div class="calendar__item calendar__item_range_inner">17
+															</div>
+															<div class="calendar__item calendar__item_range_inner">18
+															</div>
+															<div class="calendar__item calendar__item_range_inner">19
+															</div>
+															<div class="calendar__item calendar__item_range_edge">20
+															</div>
 															<!-- RANGE -->
 															<div class="calendar__item">21</div>
 															<div class="calendar__item">22</div>
