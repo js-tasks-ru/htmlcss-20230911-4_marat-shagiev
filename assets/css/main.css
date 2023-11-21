@@ -11,6 +11,7 @@
 @import "../../components/logo/logo.css";
 @import "../../components/tabs/tabs.css";
 @import "../../07-lection5/03-toggler/toggler.css";
+@import "../../05-lection3/03-calendar/calendar.css";
 @import "../../05-lection3/01-tooltip/tooltip.css";
 @import "../../06-lection4/01-avatar/avatar.css";
 
@@ -60,14 +61,17 @@
  --shadow-light: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
  --shadow-dark: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
  --bg-none: none;
+ --violet-dark: #708af0;
+ --violet-light:  #eceffd;
 
  /**skeleton-bg*/
  --skelet-bg: linear-gradient(93deg, #dde2e5 6.44%, #e2e6e8 38.47%, #f3f5f5 56.48%, #e3e7ea 77.5%, #dde2e5 102.52%);
 
  /*CALENDAR*/
- --calendar-primary: #334d6e;
- --calendar-days: #90a0b7;
- --calendar-range: rgba(160, 177, 245, 0.2) /*#A0B1F5 with opacity 0.2*/;
+ /*--calendar-primary: var(--blue);*/
+ /*--calendar-days: #90a0b7;*/
+ /*--calendar-range: rgba(160, 177, 245, 0.2) !*#A0B1F5 with opacity 0.2*!;*/
+ --calendar-range: var(--violet-light);
 
  /* Modal dialog colors */
  --grey-modal-back: rgba(196, 196, 196, 0.5);
@@ -161,6 +165,8 @@ html[data-theme-dark] {
 * SEMANTIC LAYER OF VARIABLES
 */
 
+ --calendar-range: var(--violet-dark);
+
  --color-primary: var(--grey-5);
  --color-secondary: var(--white);
  --color-alternate: var(--grey-2);
@@ -177,7 +183,7 @@ html[data-theme-dark] {
  --disabled-primary: var(grey-2);
  --disabled-secondary: var(grey-3);
 
- --title-primary: var(--grey-4);
+ --title-primary: var(--grey-3);
  --title-secondary: var(--grey-3);
  --title-alternate: var(--grey-3);
 

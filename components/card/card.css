@@ -16,6 +16,14 @@
  display: flex;
  justify-content: center;
  align-items: center;
+ gap: 32px;
+ pointer-events: none;
+}
+
+.card__inner {
+ display: flex;
+ gap: 16px;
+ flex-direction: column;
 }
 
 .card__header {
@@ -64,6 +72,18 @@
 
  .card__main {
   padding: 8px;
+ }
+
+ .card__inner {
+  gap: 12px;
+ }
+
+ .card__inner:nth-child(2) {
+  display: none;
+ }
+
+ .card__main_grid *:nth-child(n+4) {
+  display: none;
  }
 
  .card__header {
