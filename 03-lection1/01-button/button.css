@@ -17,6 +17,7 @@
  color: var(--btn-text);
  cursor: pointer;
  transition: opacity 200ms ease-in-out;
+ min-width: 182px;
 }
 
 .btn:disabled {
