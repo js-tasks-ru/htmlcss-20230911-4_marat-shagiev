@@ -35,6 +35,7 @@
  padding-top: 56px;
  padding-bottom: 56px;
  background: none;
+ background: var(--bg-secondary);
 }
 
 .footer_inner .footer__title {

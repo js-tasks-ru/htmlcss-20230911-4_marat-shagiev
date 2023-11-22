@@ -78,11 +78,7 @@
   gap: 12px;
  }
 
- .card__inner:nth-child(2) {
-  display: none;
- }
-
- .card__main_grid *:nth-child(n+4) {
+ .card__inner[data-preview-d-none] {
   display: none;
  }
 
