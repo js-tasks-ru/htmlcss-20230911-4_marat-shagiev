@@ -4,13 +4,14 @@
  left: 0;
  right: 0;
  bottom: 0;
- background: var(--grey-5);
+ background: var(--bg-primary);
  transform: translateX(-100vw);
  transition: transform .3s linear;
  overflow-y: auto;
  -ms-overflow-style: none; /* IE и Edge */
  scrollbar-width: none; /* Firefox */
  display: none;
+ z-index: 1;
 }
 
 .burger-menu::-webkit-scrollbar {
@@ -35,7 +36,7 @@
 
 .burger-menu__button_close {
  border-radius: 50%;
- background: var(--grey-2);
+ background: var(--color-alternate);
 }
 
 .burger-menu__button-svg {
@@ -46,6 +47,9 @@
 .burger-menu__logo-svg {
  height: 32px;
  width: 110px;
+ color: var(--color-primary);
+}
+.burger-menu__logo {
 }
 
 .burger-menu__header {
@@ -63,8 +67,7 @@
 }
 
 .burger-menu__title {
- color: var(--grey-3);
- /* h4 */
+ color: var(--title-primary);
  font-family: Inter, sans-serif;
  font-size: 20px;
  font-style: normal;
@@ -76,7 +79,7 @@
 
 .burger-menu__nav-section {
  padding-top: 24px;
- border-top: 1px solid var(--grey-2);
+ border-top: 1px solid var(--border-alternate);
 }
 
 .burger-menu__items, .burger-menu__item {
@@ -91,8 +94,7 @@
 
 .burger-menu__link {
  text-decoration: none;
- color: var(--black);
- /* p */
+ color: var(--link-blur-primary);
  font-family: Inter, sans-serif;
  font-size: 16px;
  font-style: normal;
@@ -101,7 +103,12 @@
 }
 
 .burger-menu__link_active {
- color: var(--red);
+ color: var(--notification);
+}
+
+.burger-menu__link:hover {
+ color: var(--notification);
+ text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {

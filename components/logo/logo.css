@@ -3,6 +3,10 @@
  justify-content: flex-start;
 }
 
+.logo__link {
+
+}
+
 .logo__svg {
  color: var(--color-primary);
  height: 32px;

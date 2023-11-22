@@ -14,6 +14,9 @@
 @import "../../05-lection3/03-calendar/calendar.css";
 @import "../../05-lection3/01-tooltip/tooltip.css";
 @import "../../06-lection4/01-avatar/avatar.css";
+@import "../../09-lection7/01-burger-menu/burger-menu.css";
+@import "../../07-lection5/01-checkbox/checkbox.css";
+@import "../../07-lection5/02-radio/radio.css";
 
 
 
@@ -113,6 +116,9 @@
  --link-active-secondary: var(--black);
  --link-blur-secondary: var(--grey-3);
 
+ --link-active-alternate: var(--notification);
+ --link-blur-alternate: var(--black);
+
  --border-alternate: var(--grey-2);
  --border-primary: var(--black);
  --border-secondary: var(--grey-3);
@@ -180,8 +186,8 @@ html[data-theme-dark] {
  --bg-secondary: var(--grey-4);
  --bg-alternate: var(--grey-4);
 
- --disabled-primary: var(grey-2);
- --disabled-secondary: var(grey-3);
+ --disabled-primary: var(--grey-4);
+ --disabled-secondary: var(--grey-3);
 
  --title-primary: var(--grey-3);
  --title-secondary: var(--grey-3);
@@ -200,7 +206,10 @@ html[data-theme-dark] {
  --link-active-secondary: var(--white);
  --link-blur-secondary: var(--grey-3);
 
- --border-alternate: var(--grey-2);
+ --link-active-alternate: var(--notification);
+ --link-blur-alternate: var(--grey-2);
+
+ --border-alternate: var(--grey-4);
  --border-primary: var(--white);
  --border-secondary: var(--grey-3);
 
