@@ -1,5 +1,6 @@
 .checkbox {
  display: inline-flex;
+ font-size: 1rem;
 }
 
 .checkbox__input {
@@ -12,24 +13,25 @@
  display: flex;
  flex-direction: row;
  align-items: center;
- gap: 12px;
+ gap: .75em;
 }
 
 .checkbox__box {
- height: 28px;
- width: 28px;
+ height: 1.75em;
+ width: 1.75em;
+ border-radius: .25em;
  border: 1px solid var(--border-alternate);
  display: flex;
  align-items: center;
  justify-content: center;
- border-radius: 4px;
  background-color: var(--bg-primary);
+ box-sizing: border-box;
 }
 
-.checkbox__box:before{
+.checkbox__box:before {
  content: '';
- height: 28px;
- width: 28px;
+ height: 1.75em;
+ width: 1.75em;
  background: var(--color-secondary);
  position: absolute;
  z-index: -1;
@@ -38,15 +40,14 @@
 
 .checkbox__icon {
  display: none;
- color: var(--color-invert);
- height: 15px;
- width: 17px;
+ color: var(--white);
+ height: .75em;
+ width: .9em;
 }
 
 .checkbox__title {
  color: var(--title-alternate);
  font-family: Inter, sans-serif;
- font-size: 16px;
  font-style: normal;
  font-weight: 400;
  line-height: 1.5;
@@ -54,6 +55,7 @@
 
 .checkbox__input:checked ~ .checkbox__wrapper .checkbox__box {
  background-color: var(--accent-primary);
+ border: none;
 }
 
 .checkbox__input:checked ~ .checkbox__wrapper .checkbox__box .checkbox__icon {
@@ -65,16 +67,18 @@
 }
 
 .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__box {
- background: var(--color-secondary);
+ background: var(--disabled-primary);
+ border: none;
 }
 
 .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__box:before {
- background: var(--color-secondary);
+ background: var(--disabled-primary);
 }
 
 .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__title {
- color: var(--color-secondary);
+ color: var(--disabled-primary);
 }
+
 .checkbox__input:disabled ~ .checkbox__wrapper .checkbox__box .checkbox__icon {
  background: var(--color-secondary);
 }
@@ -84,5 +88,11 @@
  opacity: 0;
  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+ .checkbox{
+  font-size: 14px;
+ }
 }
 
