@@ -41,11 +41,16 @@
  flex-wrap: wrap;
 }
 
+.demo__htmlcss{
+ padding: 20px;
+}
+
 @media screen and (max-width: 768px) {
 
  .demo {
   padding: 0;
   margin: 0;
+  gap: 32px;
  }
 
  .demo__title {

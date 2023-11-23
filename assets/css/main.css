@@ -22,6 +22,8 @@
 
 @import "../../03-lection1/01-button/button.css";
 
+@import "../../04-lection2/01-histogram/histogram.css";
+
 
 
 
@@ -232,4 +234,7 @@ html[data-theme-dark] {
  --card-shadow: var(--shadow-dark);
 
  --accent-primary: var(--blue);
+
+
+
 }

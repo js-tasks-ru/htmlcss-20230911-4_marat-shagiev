@@ -4,7 +4,7 @@
 
 .tabs__input {
  position: absolute;
- left: -10000px;
+ left: -100vw;
 }
 
 .tabs__input_all {
@@ -17,6 +17,12 @@
 }
 
 .tabs__input_templates {
+}
+
+.tabs__input_html {
+}
+
+.tabs__input_css {
 }
 
 .tabs__scroller {
@@ -62,27 +68,35 @@
 .tabs__input_all:checked ~ .tabs__content_all,
 .tabs__input_elements:checked ~ .tabs__content_elements,
 .tabs__input_containers:checked ~ .tabs__content_containers,
-.tabs__input_templates:checked ~ .tabs__content_templates {
+.tabs__input_templates:checked ~ .tabs__content_templates,
+.tabs__input_html:checked ~ .tabs__content_html,
+.tabs__input_css:checked ~ .tabs__content_css {
  display: block;
 }
 
 .tabs__input_all:focus ~ .tabs__scroller .tabs__label_all,
 .tabs__input_elements:focus ~ .tabs__scroller .tabs__label_elements,
 .tabs__input_containers:focus ~ .tabs__scroller .tabs__label_containers,
-.tabs__input_templates:focus ~ .tabs__scroller .tabs__label_templates {
+.tabs__input_templates:focus ~ .tabs__scroller .tabs__label_templates,
+.tabs__input_html:focus ~ .tabs__scroller .tabs__label_html,
+.tabs__input_css:focus ~ .tabs__scroller .tabs__label_css {
  color: var(--link-active-secondary);
 }
 
 .tabs__input_all:checked ~ .tabs__scroller .tabs__label_all,
 .tabs__input_elements:checked ~ .tabs__scroller .tabs__label_elements,
 .tabs__input_containers:checked ~ .tabs__scroller .tabs__label_containers,
-.tabs__input_templates:checked ~ .tabs__scroller .tabs__label_templates {
+.tabs__input_templates:checked ~ .tabs__scroller .tabs__label_templates,
+.tabs__input_html:checked ~ .tabs__scroller .tabs__label_html,
+.tabs__input_css:checked ~ .tabs__scroller .tabs__label_css {
  border-bottom: 5px solid var(--border-primary);
 }
 
 .tabs__input_all:hover ~ .tabs__scroller .tabs__label_all,
 .tabs__input_elements:hover ~ .tabs__scroller .tabs__label_elements,
 .tabs__input_containers:hover ~ .tabs__scroller .tabs__label_containers,
-.tabs__input_templates:hover ~ .tabs__scroller .tabs__label_templates {
+.tabs__input_templates:hover ~ .tabs__scroller .tabs__label_templates,
+.tabs__input_html:hover ~ .tabs__scroller .tabs__label_html,
+.tabs__input_css:hover ~ .tabs__scroller .tabs__label_css {
  border-bottom: 5px solid var(--border-primary);
 }
