@@ -68,6 +68,10 @@
 }
 
 @media screen and (max-width: 768px) {
+ .btn {
+  min-width: 76px;
+ }
+
  .btn_preview {
   font-size: .55rem;
  }
