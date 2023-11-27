@@ -16,7 +16,7 @@
  display: grid;
  grid-template-rows: auto 1fr auto;
  grid-row-gap: 36px;
- background-color: var(--bg-secondary);
+ /*background: var(--bg-secondary);*/
 }
 
 @media screen and (max-width: 768px) {

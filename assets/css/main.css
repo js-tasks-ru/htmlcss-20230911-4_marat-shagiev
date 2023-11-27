@@ -242,3 +242,9 @@ html[data-theme-dark] {
 
 
 }
+
+
+
+body {
+ background: var(--bg-secondary);
+}

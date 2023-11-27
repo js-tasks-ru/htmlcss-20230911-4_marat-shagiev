@@ -100,3 +100,10 @@
 .tabs__input_css:hover ~ .tabs__scroller .tabs__label_css {
  border-bottom: 5px solid var(--border-primary);
 }
+
+@media screen and (max-width: 768px) {
+ .tabs__content_html, .tabs__content_css {
+  width: calc(100vw - 56px);
+ }
+
+}
