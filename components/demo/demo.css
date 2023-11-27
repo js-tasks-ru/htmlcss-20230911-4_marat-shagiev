@@ -48,9 +48,10 @@
 @media screen and (max-width: 768px) {
 
  .demo {
-  padding: 0;
+  padding: 15px;
   margin: 0;
   gap: 32px;
+  border-radius: 0;
  }
 
  .demo__title {

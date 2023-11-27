@@ -19,9 +19,22 @@
  /*background: var(--bg-secondary);*/
 }
 
+.page__container {
+ margin: 0 auto;
+ max-width: 1140px;
+ padding-left: 15px;
+ padding-right: 15px;
+ box-sizing: border-box;
+ height: 100%;
+}
+
 @media screen and (max-width: 768px) {
  .page_inner {
   background-color: var(--bg-primary);
   grid-row-gap: 32px;
+ }
+ .page__container{
+  padding-left: 0;
+  padding-right: 0;
  }
 }
