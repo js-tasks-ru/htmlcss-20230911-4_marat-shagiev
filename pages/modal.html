@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>modal-dialog</title>
+		<link rel="stylesheet" href="../assets/css/normalize.css">
+		<link rel="stylesheet" href="../assets/css/main.css">
+		<link rel="stylesheet" href="../assets/css/highlight.css">
+		<script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
+		<script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+		<script src="../assets/js/highlight.js"></script>
+
+	</head>
+	<body>
+
+		<div class="page page_inner">
+
+			<header class="header header_inner">
+
+				<svg class="header__burger" id="burger-menu-open">
+					<use href="../assets/images/icons-sprite.svg#burger"></use>
+				</svg>
+
+				<div class="container">
+
+					<div class="header__top-level">
+						<div class="logo">
+							<a class="logo__link" href="../index.html">
+								<svg class="logo__svg">
+									<use href="../assets/images/logo.svg#logo"></use>
+								</svg>
+							</a>
+						</div>
+						<nav class="header__nav">
+							<a href="../index.html" class="header__nav-item">Components</a>
+							<a href="#" class="header__nav-item">About</a>
+							<a href="#" class="header__nav-item">Contacts</a>
+						</nav>
+						<div class="header__theme-switcher">
+
+							<label class="toggler">
+								<input id="theme-changer" class="toggler__input" type="checkbox">
+								<div class="toggler__wrapper">
+									<svg class="toggler__icon toggler__icon_theme-light">
+										<use href="../assets/images/icons-sprite.svg#theme-light"></use>
+									</svg>
+									<div class="toggler__box">
+										<div class="toggler__circle"></div>
+									</div>
+									<svg class="toggler__icon toggler__icon_theme-dark">
+										<use href="../assets/images/icons-sprite.svg#theme-dark"></use>
+									</svg>
+								</div>
+							</label>
+
+						</div>
+					</div>
+
+				</div>
+
+			</header>
+
+			<div class="burger-menu" id="burger-menu">
+
+				<header class="burger-menu__header">
+					<div class="burger-menu__button burger-menu__button_close">
+						<svg class="burger-menu__button-svg" id="burger-menu-close">
+							<use href="../assets/images/icons-sprite.svg#close"></use>
+						</svg>
+					</div>
+					<div class="logo">
+						<a class="logo__link" href="../index.html">
+							<svg class="logo__svg">
+								<use href="../assets/images/logo.svg#logo"></use>
+							</svg>
+						</a>
+					</div>
+				</header>
+
+				<nav class="burger-menu__main">
+					<section class="burger-menu__nav-section">
+
+						<label class="toggler toggler_d-block">
+							<input class="toggler__input" id="theme-changer-burger" type="checkbox">
+							<div class="toggler__wrapper toggler__wrapper_burger-menu">
+								<span class="toggler__title toggler__box_burger-menu">Dark mode</span>
+								<div class="toggler__box toggler__box_burger-menu">
+									<div class="toggler__circle"></div>
+								</div>
+							</div>
+						</label>
+
+					</section>
+					<section class="burger-menu__nav-section">
+						<h4 class="burger-menu__title">Elements</h4>
+						<ul class="burger-menu__items">
+							<li class="burger-menu__item">
+								<a class="burger-menu__link" href="custom-form-elements.html">Custom form elements</a>
+							</li>
+							<li class="burger-menu__item"><a class="burger-menu__link"
+															 href="histogram.html">Histogram
+							</a></li>
+							<li class="burger-menu__item"><a class="burger-menu__link" href="avatar.html">Avatar</a>
+							</li>
+						</ul>
+					</section>
+					<section class="burger-menu__nav-section">
+						<h4 class="burger-menu__title">Containers</h4>
+						<ul class="burger-menu__items">
+							<li class="burger-menu__item"><a class="burger-menu__link" href="tooltip.html">Tooltip</a>
+							</li>
+							<li class="burger-menu__item"><a class="burger-menu__link" href="calendar.html">Calendar</a>
+							</li>
+							<li class="burger-menu__item"><a class="burger-menu__link burger-menu__link_active"
+															 href="modal.html">Modal
+								dialog</a></li>
+						</ul>
+					</section>
+					<section class="burger-menu__nav-section">
+						<h4 class="burger-menu__title">Templates</h4>
+						<ul class="burger-menu__items">
+						</ul>
+					</section>
+				</nav>
+			</div>
+
+			<div class="preview__wrapper preview__wrapper_block preview__wrapper_h100">
+				<div class="page__container">
+					<main class="preview preview_inner">
+
+						<nav class="sidebar">
+							<section class="sidebar__section">
+								<h4 class="sidebar__title">Elements</h4>
+								<ul class="sidebar__items">
+									<li class="sidebar__item">
+										<a class="sidebar__link" href="custom-form-elements.html">Custom form
+											elements</a>
+									</li>
+									<li class="sidebar__item">
+										<a class="sidebar__link"
+										   href="histogram.html">Histogram</a>
+									</li>
+									<li class="sidebar__item">
+										<a class="sidebar__link" href="avatar.html">Avatar</a>
+									</li>
+								</ul>
+							</section>
+							<section class="sidebar__section">
+								<h4 class="sidebar__title">Containers</h4>
+								<ul class="sidebar__items">
+									<li class="sidebar__item">
+										<a class="sidebar__link" href="tooltip.html">Tooltip</a>
+									</li>
+									<li class="sidebar__item">
+										<a class="sidebar__link" href="calendar.html">Calendar</a>
+									</li>
+									<li class="sidebar__item">
+										<a class="sidebar__link sidebar__link_active" href="modal.html">Modal dialog</a>
+									</li>
+								</ul>
+							</section>
+							<section class="sidebar__section">
+								<h4 class="sidebar__title">Templates</h4>
+								<ul class="sidebar__items">
+									<li class="sidebar__item">
+										<a class="sidebar__link" href="#"></a>
+									</li>
+								</ul>
+							</section>
+						</nav>
+
+						<div class="demo">
+							<h3 class="demo__title">Modal dialog</h3>
+
+							<div class="demo__main">
+
+								<div id="modal" class="modal">
+									<div class="modal__window">
+
+										<svg id="modal-close" class="modal__close">
+											<use href="../assets/images/icons-sprite.svg#close"></use>
+										</svg>
+
+										<div class="modal__title">Modal dialog</div>
+
+										<div class="modal__inner-col">
+											<div class="input input_w100 input_success">
+												<div class="input__element">
+													<label class="input__label">Name</label>
+													<div class="input__inner">
+														<input type="text" class="input__text"
+															   value="Marat Shagiev"
+															   placeholder="Placeholder">
+														<svg class="input__icon input__icon_invalid">
+															<use href="../assets/images/icons-sprite.svg#error"></use>
+														</svg>
+														<svg class="input__icon input__icon_success">
+															<use href="../assets/images/icons-sprite.svg#success"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+
+											<div class="input input_w100 input_invalid">
+												<div class="input__element">
+													<label class="input__label">Phone</label>
+													<div class="input__inner">
+														<input type="text" class="input__text"
+															   placeholder="+7 (999) 999-99-99">
+														<svg class="input__icon input__icon_invalid">
+															<use href="../assets/images/icons-sprite.svg#error"></use>
+														</svg>
+														<svg class="input__icon input__icon_success">
+															<use href="../assets/images/icons-sprite.svg#success"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+
+											<button class="btn btn_view_primary btn_margin-top_1em">Submit
+											</button>
+										</div>
+
+									</div>
+
+								</div>
+
+								<div id="modal-open" class="btn btn_view_primary">Open Modal</div>
+
+							</div>
+
+							<div class="tabs">
+								<input type="radio" id="#html-tab" class="tabs__input tabs__input_html" name="tab"
+									   checked>
+								<input type="radio" id="#css-tab" class="tabs__input tabs__input_css" name="tab">
+
+								<nav class="tabs__scroller">
+									<div class="container">
+										<div class="tabs__inner">
+											<label for="#html-tab" class="tabs__label tabs__label_html">HTML</label>
+											<label for="#css-tab" class="tabs__label tabs__label_css">CSS</label>
+										</div>
+									</div>
+								</nav>
+
+								<div class="tabs__content tabs__content_html">
+									<div class="demo__htmlcss">
+										<pre><code>&lt;div class=&quot;modal&quot;&gt;
+&lt;div class=&quot;modal__window&quot;&gt;
+ &lt;div class=&quot;modal__inner-col&quot;&gt;
+  &lt;div class=&quot;modal__container&quot;&gt;
+   &lt;div class=&quot;input input_w100 input_success input_preview&quot;
+     data-preview-d-none&gt;
+    &lt;div class=&quot;input__element&quot;&gt;
+     &lt;label class=&quot;input__label&quot;&gt;Name&lt;/label&gt;
+     &lt;div class=&quot;input__inner&quot;&gt;
+      &lt;input type=&quot;text&quot; class=&quot;input__text&quot;
+          value=&quot;Marat Shagiev&quot;
+          placeholder=&quot;Placeholder&quot;&gt;
+      &lt;svg class=&quot;input__icon input__icon_invalid&quot;&gt;
+       &lt;use href=&quot;assets/images/icons-sprite.svg#error&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+      &lt;svg class=&quot;input__icon input__icon_success&quot;&gt;
+       &lt;use href=&quot;assets/images/icons-sprite.svg#success&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;input input_w100 input_invalid input_preview&quot;&gt;
+    &lt;div class=&quot;input__element&quot;&gt;
+     &lt;label class=&quot;input__label&quot;&gt;Phone&lt;/label&gt;
+     &lt;div class=&quot;input__inner&quot;&gt;
+      &lt;input type=&quot;text&quot; class=&quot;input__text&quot;
+          placeholder=&quot;+7 (999) 999-99-99&quot;&gt;
+      &lt;svg class=&quot;input__icon input__icon_invalid&quot;&gt;
+       &lt;use href=&quot;assets/images/icons-sprite.svg#error&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+      &lt;svg class=&quot;input__icon input__icon_success&quot;&gt;
+       &lt;use href=&quot;assets/images/icons-sprite.svg#success&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;btn btn_preview btn_view_primary&quot;&gt;Submit
+  &lt;/button&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+									</div>
+								</div>
+
+								<div class="tabs__content tabs__content_css">
+									<div class="demo__htmlcss">
+
+										<pre><code>.modal {
+ display: none;
+ position: fixed;
+ background-color: var(--grey-modal-back);
+ height: 100vh;
+ width: 100vw;
+ font-family: Inter, sans-serif;
+ font-size: 1rem;
+}
+
+.modal__window {
+ width: 26.75em;
+ position: absolute;
+ top: 50&#37;;
+ left: 50&#37;;
+ transform: translate(-50&#37;, -50&#37;);
+ border-radius: .5em;
+ background: var(--bg-primary);
+ padding: 1.875em 2.5em 2.0625em;
+}
+
+.modal__inner-col {
+ display: flex;
+ flex-direction: column;
+ gap: .8em;
+ align-items: flex-start;
+}
+
+.modal__close {
+ cursor: pointer;
+ position: absolute;
+ top: .75em;
+ right: .75em;
+ height: 1.5em;
+ width: 1.5em;
+ color: var(--color-primary);
+}
+
+.modal_preview {
+ height: 100&#37;;
+ width: 100&#37;;
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 1.375em;
+ box-sizing: border-box;
+}
+
+.modal_preview .modal__window {
+ height: 100&#37;;
+ width: 100&#37;;
+ background: var(--bg-primary);
+ position: relative;
+ top: initial;
+ left: initial;
+ transform: none;
+ border-radius: .5em;
+ box-sizing: border-box;
+ padding: 1.375em;
+ padding-top: .5em;
+}
+
+@media screen and (max-width: 768px) {
+ .modal_preview {
+  position: absolute;
+  top: 0;
+  padding: 1em 0;
+ }
+
+ .modal_preview .modal__window {
+  border-radius: 0;
+  padding: .5em .6em 1em;
+ }
+
+ .modal__inner-col {
+  gap: .5em;
+ }
+}</code></pre>
+
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</main>
+				</div>
+
+			</div>
+
+			<footer class="footer footer_inner">
+				<h5 class="footer__title">Reusable component library</h5>
+			</footer>
+
+		</div>
+
+		<script>hljs.highlightAll();</script>
+		<script src="../05-lection3/02-modal/index.js"></script>
+	</body>
+</html>

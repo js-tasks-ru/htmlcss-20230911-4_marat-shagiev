@@ -20,6 +20,10 @@
  transition: transform 200ms ease-in-out;
 }
 
+.btn_margin-top_1em {
+ margin-top: 1em;
+}
+
 .btn_preview {
  font-size: .6rem;
 }

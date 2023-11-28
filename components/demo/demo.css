@@ -28,6 +28,10 @@
  row-gap: 40px;
 }
 
+.demo__main_justify_center {
+ justify-content: center;
+}
+
 .demo__inner-col, .demo__inner-row {
  display: flex;
  gap: 20px;
