@@ -1,6 +1,7 @@
 .avatar {
- height: 160px;
- width: 160px;
+ font-size: 1rem;
+ height: 10em;
+ width: 10em;
  border-radius: 50%;
  overflow: hidden;
 }
@@ -13,7 +14,7 @@
 
 @media screen and (max-width: 768px){
  .avatar {
-  height: 116px;
-  width: 116px;
+  height: 7.25em;
+  width: 7.25em;
  }
 }
