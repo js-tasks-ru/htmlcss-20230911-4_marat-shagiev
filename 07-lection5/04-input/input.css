@@ -2,6 +2,9 @@
  font-size: 1rem;
  display: inline-flex;
  gap: .4em;
+}
+
+.input_w100{
  width: 100%;
 }
 

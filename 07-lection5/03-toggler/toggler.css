@@ -81,6 +81,7 @@
 
 .toggler__input:checked ~ .toggler__wrapper .toggler__circle {
  border: 1px solid var(--accent-primary);
+ background-color: var(--white);
  height: 24px;
  width: 24px;
  /*background-color: var(--bg-primary);*/
@@ -97,7 +98,7 @@
 
 .toggler__input:disabled ~ .toggler__wrapper .toggler__circle {
  background-color: var(--disabled-secondary);
- border: 1px solid var(--border-alternate);
+ border: 1px solid var(--disabled-secondary);
 }
 
 .toggler__input:disabled ~ .toggler__wrapper .toggler__box {

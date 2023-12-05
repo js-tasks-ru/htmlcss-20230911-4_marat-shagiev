@@ -1,7 +1,8 @@
 .page {
- height: 100vh; /* ? If set to 100%, the footer sometimes becomes detached. */
+ height: 100%; /* ? If set to 100%, the footer sometimes becomes detached. */
  display: flex;
- flex-flow: column nowrap;
+ flex-direction: column;
+ flex-wrap: nowrap;
 }
 
 .page__main {
@@ -15,12 +16,25 @@
  display: grid;
  grid-template-rows: auto 1fr auto;
  grid-row-gap: 36px;
- background-color: var(--bg-secondary);
+ /*background: var(--bg-secondary);*/
+}
+
+.page__container {
+ margin: 0 auto;
+ max-width: 1140px;
+ padding-left: 15px;
+ padding-right: 15px;
+ box-sizing: border-box;
+ height: 100%;
 }
 
 @media screen and (max-width: 768px) {
  .page_inner {
   background-color: var(--bg-primary);
   grid-row-gap: 32px;
+ }
+ .page__container{
+  padding-left: 0;
+  padding-right: 0;
  }
 }

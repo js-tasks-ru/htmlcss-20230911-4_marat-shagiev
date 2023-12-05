@@ -9,8 +9,9 @@
  display: flex;
  flex-flow: column nowrap;
  gap: 6px;
- gap: .375em;
  width: 100%;
+ max-width: 364px;
+ gap: .375em;
 }
 
 .histogram__header {
@@ -88,6 +89,6 @@
 
 @media screen and (max-width: 768px) {
  .histogram{
-  font-size: .5rem;
+  font-size: .7rem;
  }
 }

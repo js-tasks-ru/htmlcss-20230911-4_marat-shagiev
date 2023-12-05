@@ -1,0 +1,193 @@
+/*!
+  Theme: Default
+  Description: Original highlight.js style
+  Author: (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+  Maintainer: @highlightjs/core-team
+  Website: https://highlightjs.org/
+  License: see project LICENSE
+  Touched: 2021
+*/
+pre code.hljs {
+ display: block;
+ overflow-x: auto;
+ /*padding: 1em;*/
+}
+
+code.hljs {
+ /*padding: 3px 5px;*/
+}
+
+.hljs {
+ background: var(--bg-primary);
+ color: #444444
+}
+
+.hljs-comment {
+ color: #697070
+}
+
+.hljs-punctuation, .hljs-tag {
+ color: #444a
+}
+
+.hljs-tag .hljs-attr, .hljs-tag .hljs-name {
+ color: #444444
+}
+
+.hljs-attribute, .hljs-doctag, .hljs-keyword, .hljs-meta .hljs-keyword, .hljs-name, .hljs-selector-tag {
+ font-weight: 700
+}
+
+.hljs-deletion, .hljs-number, .hljs-quote, .hljs-selector-class, .hljs-selector-id, .hljs-string, .hljs-template-tag, .hljs-type {
+ color: #880000
+}
+
+.hljs-section, .hljs-title {
+ color: #880000;
+ font-weight: 700
+}
+
+.hljs-link, .hljs-operator, .hljs-regexp, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-symbol, .hljs-template-variable, .hljs-variable {
+ color: #ab5656
+}
+
+.hljs-literal {
+ color: #669955
+}
+
+.hljs-addition, .hljs-built_in, .hljs-bullet, .hljs-code {
+ color: #397300
+}
+
+.hljs-meta {
+ color: #1f7199
+}
+
+.hljs-meta .hljs-string {
+ color: #3388aa
+}
+
+.hljs-emphasis {
+ font-style: italic
+}
+
+.hljs-strong {
+ font-weight: 700
+}
+
+/** DARK THEME */
+html[data-theme-dark] .hljs {
+ color: #ffffff;
+ background: var(--bg-primary);
+}
+
+html[data-theme-dark] .hljs-subst {
+ /* var(--highlight-color) */
+ color: #ffffff
+}
+
+html[data-theme-dark] .hljs-comment {
+ /* var(--highlight-comment) */
+ color: #999999
+}
+
+html[data-theme-dark] .hljs-tag {
+ color: gray;
+}
+
+html[data-theme-dark] .hljs-keyword,
+html[data-theme-dark] .hljs-selector-tag,
+html[data-theme-dark] .hljs-meta .hljs-keyword,
+html[data-theme-dark] .hljs-doctag,
+html[data-theme-dark] .hljs-section {
+ /* var(--highlight-keyword) */
+ color: #88aece
+}
+
+html[data-theme-dark] .hljs-attr {
+ /* var(--highlight-attribute); */
+ color: #88aece
+}
+
+html[data-theme-dark] .hljs-attribute {
+ /* var(--highlight-symbol) */
+ color: #c59bc1
+}
+
+html[data-theme-dark] .hljs-name,
+html[data-theme-dark] .hljs-type,
+html[data-theme-dark] .hljs-number,
+html[data-theme-dark] .hljs-selector-id,
+html[data-theme-dark] .hljs-quote,
+html[data-theme-dark] .hljs-template-tag {
+ /* var(--highlight-namespace) */
+ color: #f08d49
+}
+
+html[data-theme-dark] .hljs-selector-class {
+ /* var(--highlight-keyword) */
+ color: #88aece
+}
+
+html[data-theme-dark] .hljs-string,
+html[data-theme-dark] .hljs-regexp,
+html[data-theme-dark] .hljs-symbol,
+html[data-theme-dark] .hljs-variable,
+html[data-theme-dark] .hljs-template-variable,
+html[data-theme-dark] .hljs-link,
+html[data-theme-dark] .hljs-selector-attr {
+ /* var(--highlight-variable) */
+ color: #b5bd68
+}
+
+html[data-theme-dark] .hljs-meta,
+html[data-theme-dark] .hljs-selector-pseudo {
+ /* var(--highlight-keyword) */
+ color: #88aece
+}
+
+html[data-theme-dark] .hljs-built_in,
+html[data-theme-dark] .hljs-title,
+html[data-theme-dark] .hljs-literal {
+ /* var(--highlight-literal) */
+ color: #f08d49
+}
+
+html[data-theme-dark] .hljs-bullet,
+html[data-theme-dark] .hljs-code {
+ /* var(--highlight-punctuation) */
+ color: #cccccc
+}
+
+html[data-theme-dark] .hljs-meta .hljs-string {
+ /* var(--highlight-variable) */
+ color: #b5bd68
+}
+
+html[data-theme-dark] .hljs-deletion {
+ /* var(--highlight-deletion) */
+ color: #de7176
+}
+
+html[data-theme-dark] .hljs-addition {
+ /* var(--highlight-addition) */
+ color: #76c490
+}
+
+html[data-theme-dark] .hljs-emphasis {
+ font-style: italic
+}
+
+html[data-theme-dark] .hljs-strong {
+ font-weight: bold
+}
+
+html[data-theme-dark] .hljs-formula,
+html[data-theme-dark] .hljs-operator,
+html[data-theme-dark] .hljs-params,
+html[data-theme-dark] .hljs-property,
+html[data-theme-dark] .hljs-punctuation,
+html[data-theme-dark] .hljs-tag {
+ /* purposely ignored */
+
+}

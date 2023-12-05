@@ -16,6 +16,7 @@
  border: none;
  color: var(--btn-text);
  cursor: pointer;
+ min-width: 182px;
  transition: transform 200ms ease-in-out;
 }
 
@@ -67,6 +68,10 @@
 }
 
 @media screen and (max-width: 768px) {
+ .btn {
+  min-width: 76px;
+ }
+
  .btn_preview {
   font-size: .55rem;
  }

@@ -3,6 +3,9 @@
  font-family: Inter, sans-serif;
  border-radius: 12px;
  background-color: var(--bg-primary);
+ display: flex;
+ flex-direction: column;
+ gap: 58px;
 }
 
 .demo__title {
@@ -13,13 +16,46 @@
  font-style: normal;
  font-weight: 400;
  line-height: 1.35;
+ margin: 0;
+ padding: 0;
+}
+
+.demo__main {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: flex-start;
+ column-gap: 30px;
+ row-gap: 40px;
+}
+
+.demo__main_justify_center {
+ justify-content: center;
+}
+
+.demo__inner-col, .demo__inner-row {
+ display: flex;
+ gap: 20px;
+}
+
+.demo__inner-col {
+ flex-direction: column;
+}
+
+.demo__inner-row {
+ flex-wrap: wrap;
+}
+
+.demo__htmlcss{
+ padding: 20px;
 }
 
 @media screen and (max-width: 768px) {
 
  .demo {
-  padding: 0;
+  padding: 15px;
   margin: 0;
+  gap: 32px;
+  border-radius: 0;
  }
 
  .demo__title {

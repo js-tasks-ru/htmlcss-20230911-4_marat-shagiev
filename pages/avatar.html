@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>avatar</title>
+        <link rel="stylesheet" href="../assets/css/normalize.css">
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <link rel="stylesheet" href="../assets/css/highlight.css">
+        <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
+        <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+        <script src="../assets/js/highlight.js"></script>
+    </head>
+    <body>
+
+        <div class="page page_inner">
+
+            <header class="header header_inner">
+
+                <svg class="header__burger" id="burger-menu-open">
+                    <use href="../assets/images/icons-sprite.svg#burger"></use>
+                </svg>
+
+                <div class="container">
+
+                    <div class="header__top-level">
+                        <div class="logo">
+                            <a class="logo__link" href="../index.html">
+                                <svg class="logo__svg">
+                                    <use href="../assets/images/logo.svg#logo"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <nav class="header__nav">
+                            <a href="../index.html" class="header__nav-item">Components</a>
+                            <a href="#" class="header__nav-item">About</a>
+                            <a href="#" class="header__nav-item">Contacts</a>
+                        </nav>
+                        <div class="header__theme-switcher">
+
+                            <label class="toggler">
+                                <input id="theme-changer" class="toggler__input" type="checkbox">
+                                <div class="toggler__wrapper">
+                                    <svg class="toggler__icon toggler__icon_theme-light">
+                                        <use href="../assets/images/icons-sprite.svg#theme-light"></use>
+                                    </svg>
+                                    <div class="toggler__box">
+                                        <div class="toggler__circle"></div>
+                                    </div>
+                                    <svg class="toggler__icon toggler__icon_theme-dark">
+                                        <use href="../assets/images/icons-sprite.svg#theme-dark"></use>
+                                    </svg>
+                                </div>
+                            </label>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="burger-menu" id="burger-menu">
+
+                <header class="burger-menu__header">
+                    <div class="burger-menu__button burger-menu__button_close">
+                        <svg class="burger-menu__button-svg" id="burger-menu-close">
+                            <use href="../assets/images/icons-sprite.svg#close"></use>
+                        </svg>
+                    </div>
+                    <div class="logo">
+                        <a class="logo__link" href="../index.html">
+                            <svg class="logo__svg">
+                                <use href="../assets/images/logo.svg#logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </header>
+
+                <nav class="burger-menu__main">
+                    <section class="burger-menu__nav-section">
+
+                        <label class="toggler toggler_d-block">
+                            <input class="toggler__input" id="theme-changer-burger" type="checkbox">
+                            <div class="toggler__wrapper toggler__wrapper_burger-menu">
+                                <span class="toggler__title toggler__box_burger-menu">Dark mode</span>
+                                <div class="toggler__box toggler__box_burger-menu">
+                                    <div class="toggler__circle"></div>
+                                </div>
+                            </div>
+                        </label>
+
+                    </section>
+                    <section class="burger-menu__nav-section">
+                        <h4 class="burger-menu__title">Elements</h4>
+                        <ul class="burger-menu__items">
+                            <li class="burger-menu__item">
+                                <a class="burger-menu__link" href="custom-form-elements.html">Custom form elements</a>
+                            </li>
+                            <li class="burger-menu__item"><a class="burger-menu__link"
+                                                                                       href="histogram.html">Histogram
+                            </a></li>
+                            <li class="burger-menu__item"><a class="burger-menu__link burger-menu__link_active" href="avatar.html">Avatar</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="burger-menu__nav-section">
+                        <h4 class="burger-menu__title">Containers</h4>
+                        <ul class="burger-menu__items">
+                            <li class="burger-menu__item"><a class="burger-menu__link" href="tooltip.html">Tooltip</a>
+                            </li>
+                            <li class="burger-menu__item"><a class="burger-menu__link" href="calendar.html">Calendar</a>
+                            </li>
+                            <li class="burger-menu__item"><a class="burger-menu__link" href="modal.html">Modal
+                                dialog</a></li>
+                        </ul>
+                    </section>
+                    <section class="burger-menu__nav-section">
+                        <h4 class="burger-menu__title">Templates</h4>
+                        <ul class="burger-menu__items">
+                        </ul>
+                    </section>
+                </nav>
+            </div>
+
+            <div class="preview__wrapper preview__wrapper_block preview__wrapper_h100">
+                <div class="page__container">
+                    <main class="preview preview_inner">
+
+                        <nav class="sidebar">
+                            <section class="sidebar__section">
+                                <h4 class="sidebar__title">Elements</h4>
+                                <ul class="sidebar__items">
+                                    <li class="sidebar__item">
+                                        <a class="sidebar__link" href="custom-form-elements.html">Custom form
+                                            elements</a>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <a class="sidebar__link"
+                                           href="histogram.html">Histogram</a>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <a class="sidebar__link sidebar__link_active" href="avatar.html">Avatar</a>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="sidebar__section">
+                                <h4 class="sidebar__title">Containers</h4>
+                                <ul class="sidebar__items">
+                                    <li class="sidebar__item">
+                                        <a class="sidebar__link" href="tooltip.html">Tooltip</a>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <a class="sidebar__link" href="calendar.html">Calendar</a>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <a class="sidebar__link" href="modal.html">Modal dialog</a>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="sidebar__section">
+                                <h4 class="sidebar__title">Templates</h4>
+                                <ul class="sidebar__items">
+                                    <li class="sidebar__item">
+                                        <a class="sidebar__link" href="#"></a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </nav>
+
+                        <div class="demo">
+                            <h3 class="demo__title">Avatar</h3>
+
+                            <div class="demo__main">
+
+                                <div class="avatar">
+                                    <img class="avatar__img" src="../06-lection4/01-avatar/public/avatar-400.jpg"
+                                         alt="user avatar"
+                                         srcset="../06-lection4/01-avatar/public/avatar-100.jpg 1x,
+                                         ../06-lection4/01-avatar/public/avatar-200.jpg 2x,
+                                         ../06-lection4/01-avatar/public/avatar-400.jpg 4x"
+                                         sizes="(min-width: 768px) 160px, 116px">
+                                </div>
+
+                            </div>
+
+                            <div class="tabs">
+                                <input type="radio" id="#html-tab" class="tabs__input tabs__input_html" name="tab"
+                                       checked>
+                                <input type="radio" id="#css-tab" class="tabs__input tabs__input_css" name="tab">
+
+                                <nav class="tabs__scroller">
+                                    <div class="container">
+                                        <div class="tabs__inner">
+                                            <label for="#html-tab" class="tabs__label tabs__label_html">HTML</label>
+                                            <label for="#css-tab" class="tabs__label tabs__label_css">CSS</label>
+                                        </div>
+                                    </div>
+                                </nav>
+
+                                <div class="tabs__content tabs__content_html">
+                                    <div class="demo__htmlcss">
+										<pre><code>&lt;div class=&quot;avatar&quot;&gt;
+ &lt;img class=&quot;avatar__img&quot; src=&quot;public/avatar-400.jpg&quot; alt=&quot;user avatar&quot;
+   srcset=&quot;public/avatar-100.jpg 1x,
+   public/avatar-200.jpg 2x,
+   public/avatar-400.jpg 4x&quot;
+   sizes=&quot;(min-width: 768px) 160px, 116px&quot;&gt;
+&lt;/div&gt;</code></pre>
+                                    </div>
+                                </div>
+
+                                <div class="tabs__content tabs__content_css">
+                                    <div class="demo__htmlcss">
+
+										<pre><code>.avatar {
+ font-size: 1rem;
+ height: 10em;
+ width: 10em;
+ border-radius: 50&#37;;
+ overflow: hidden;
+}
+
+.avatar__img {
+ height: 100&#37;;
+ width: 100&#37;;
+ object-fit: cover;
+}
+
+@media screen and (max-width: 768px){
+ .avatar {
+  height: 7.25em;
+  width: 7.25em;
+ }
+}</code></pre>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </main>
+                </div>
+
+            </div>
+
+            <footer class="footer footer_inner">
+                <h5 class="footer__title">Reusable component library</h5>
+            </footer>
+
+        </div>
+
+        <script>hljs.highlightAll();</script>
+    </body>
+</html>
